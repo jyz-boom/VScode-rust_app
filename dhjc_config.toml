@@ -1,0 +1,13 @@
+# DHJC Rust 配置文件
+
+# 串口号，例如 "COM3" 或 "COM5"
+port_name = "COM3"
+
+# 波特率，例如 115200
+baud_rate = 115200
+
+# 日志文件夹，相对路径或绝对路径
+log_folder = "logs"
+
+# 启动时是否打印可用串口列表
+list_ports_on_start = true

@@ -1,0 +1,12 @@
+F:\VScode-git-tiny_app\VScode-rust_app\target\debug\deps\writeable-cf0b359cdcaa2114.d: C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\lib.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\cmp.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\impls.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\ops.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\parts_write_adapter.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\try_writeable.rs
+
+F:\VScode-git-tiny_app\VScode-rust_app\target\debug\deps\libwriteable-cf0b359cdcaa2114.rlib: C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\lib.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\cmp.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\impls.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\ops.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\parts_write_adapter.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\try_writeable.rs
+
+F:\VScode-git-tiny_app\VScode-rust_app\target\debug\deps\libwriteable-cf0b359cdcaa2114.rmeta: C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\lib.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\cmp.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\impls.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\ops.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\parts_write_adapter.rs C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\try_writeable.rs
+
+C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\lib.rs:
+C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\cmp.rs:
+C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\impls.rs:
+C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\ops.rs:
+C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\parts_write_adapter.rs:
+C:\Users\12278\.cargo\registry\src\rsproxy.cn-e3de039b2554c837\writeable-0.6.2\src\try_writeable.rs:

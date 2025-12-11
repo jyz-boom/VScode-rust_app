@@ -1,0 +1,947 @@
+**********************************
+        SYSTEM IS RUNNING
+**********************************
+LED Self-Test Start......
+LED Self-Test Done.
+Waiting for signal pulses...
+[Live] Stage:1 | Count:1 | Total:1 | Wait:135 ms
+[Live] Stage:1 | Count:1 | Total:1 | Wait:336 ms
+[Live] Stage:1 | Count:1 | Total:1 | Wait:537 ms
+[Live] Stage:1 | Count:1 | Total:1 | Wait:738 ms
+[Live] Stage:1 | Count:1 | Total:1 | Wait:939 ms
+[Live] Stage:1 | Count:2 | Total:2 | Wait:140 ms
+[Live] Stage:1 | Count:2 | Total:2 | Wait:341 ms
+[Live] Stage:1 | Count:2 | Total:2 | Wait:542 ms
+[Live] Stage:1 | Count:2 | Total:2 | Wait:743 ms
+[Live] Stage:1 | Count:2 | Total:2 | Wait:944 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:145 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:346 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:547 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:748 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:949 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:1150 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:1350 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:1550 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:1750 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:1950 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:2150 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:2350 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:2550 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:2750 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:2950 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:3150 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:3350 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:3550 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:3750 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:3950 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:4150 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:4350 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:4550 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:4750 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:4950 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:5150 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:5350 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:5550 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:5750 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:5950 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:6150 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:6350 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:6550 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:6750 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:6950 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:7150 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:7350 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:7550 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:7750 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:7950 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:8150 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:8350 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:8550 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:8750 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:8950 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:9150 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:9350 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:9550 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:9750 ms
+[Live] Stage:1 | Count:3 | Total:3 | Wait:9950 ms
+---------- [STAGE REPORT] ----------
+ Stage ID      : 1
+ Total Arcs    : 3
+ Duration      : 3063 ms
+ Min Interval  : 1021 ms
+ Max Interval  : 1021 ms
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+ Status        : Session Closed (Timeout)
+ Active Time   : 3.063 s
+ Total Stages  : 1
+ Grand Total   : 3 pulses
+ Avg Frequency : 1.96 Hz
+=====================================
+**********************************
+        SYSTEM IS RUNNING
+**********************************
+[11:59:09] LED Self-Test Start......
+[11:59:10] LED Self-Test Done.
+[11:59:10] Waiting for signal pulses...
+[11:59:11] [Live] Stage:1 | Count:1 | Total:1 | Wait:535 ms
+[11:59:11] [Live] Stage:1 | Count:1 | Total:1 | Wait:736 ms
+[11:59:11] [Live] Stage:1 | Count:1 | Total:1 | Wait:937 ms
+[11:59:12] [Live] Stage:1 | Count:2 | Total:2 | Wait:138 ms
+[11:59:12] [Live] Stage:1 | Count:2 | Total:2 | Wait:339 ms
+[11:59:12] [Live] Stage:1 | Count:2 | Total:2 | Wait:540 ms
+[11:59:13] [Live] Stage:1 | Count:2 | Total:2 | Wait:741 ms
+[11:59:13] [Live] Stage:1 | Count:2 | Total:2 | Wait:942 ms
+[11:59:13] [Live] Stage:1 | Count:2 | Total:2 | Wait:1143 ms
+[11:59:14] [Live] Stage:1 | Count:2 | Total:2 | Wait:1343 ms
+[11:59:14] [Live] Stage:1 | Count:2 | Total:2 | Wait:1543 ms
+[11:59:14] [Live] Stage:1 | Count:2 | Total:2 | Wait:1743 ms
+[11:59:15] [Live] Stage:1 | Count:2 | Total:2 | Wait:1943 ms
+[11:59:15] [Live] Stage:1 | Count:2 | Total:2 | Wait:2143 ms
+[11:59:15] [Live] Stage:1 | Count:2 | Total:2 | Wait:2343 ms
+[11:59:16] [Live] Stage:1 | Count:2 | Total:2 | Wait:2543 ms
+[11:59:16] [Live] Stage:1 | Count:2 | Total:2 | Wait:2743 ms
+[11:59:16] [Live] Stage:1 | Count:2 | Total:2 | Wait:2943 ms
+[11:59:16] [Live] Stage:1 | Count:2 | Total:2 | Wait:3143 ms
+[11:59:17] [Live] Stage:1 | Count:2 | Total:2 | Wait:3343 ms
+[11:59:17] [Live] Stage:1 | Count:2 | Total:2 | Wait:3543 ms
+[11:59:17] [Live] Stage:1 | Count:2 | Total:2 | Wait:3743 ms
+[11:59:18] [Live] Stage:1 | Count:2 | Total:2 | Wait:3943 ms
+[11:59:18] [Live] Stage:1 | Count:2 | Total:2 | Wait:4143 ms
+[11:59:18] [Live] Stage:1 | Count:2 | Total:2 | Wait:4343 ms
+[11:59:18] [Live] Stage:1 | Count:2 | Total:2 | Wait:4543 ms
+[11:59:19] [Live] Stage:1 | Count:2 | Total:2 | Wait:4743 ms
+[11:59:19] [Live] Stage:1 | Count:2 | Total:2 | Wait:4943 ms
+[11:59:19] [Live] Stage:1 | Count:2 | Total:2 | Wait:5143 ms
+[11:59:20] [Live] Stage:1 | Count:2 | Total:2 | Wait:5343 ms
+[11:59:20] [Live] Stage:1 | Count:2 | Total:2 | Wait:5543 ms
+[11:59:20] [Live] Stage:1 | Count:2 | Total:2 | Wait:5743 ms
+[11:59:21] [Live] Stage:1 | Count:2 | Total:2 | Wait:5943 ms
+[11:59:21] [Live] Stage:1 | Count:2 | Total:2 | Wait:6143 ms
+[11:59:21] [Live] Stage:1 | Count:2 | Total:2 | Wait:6343 ms
+[11:59:22] [Live] Stage:1 | Count:2 | Total:2 | Wait:6543 ms
+[11:59:22] [Live] Stage:1 | Count:2 | Total:2 | Wait:6743 ms
+[11:59:22] [Live] Stage:1 | Count:2 | Total:2 | Wait:6943 ms
+[11:59:22] [Live] Stage:1 | Count:2 | Total:2 | Wait:7143 ms
+[11:59:23] [Live] Stage:1 | Count:2 | Total:2 | Wait:7343 ms
+[11:59:23] [Live] Stage:1 | Count:2 | Total:2 | Wait:7543 ms
+[11:59:23] [Live] Stage:1 | Count:2 | Total:2 | Wait:7743 ms
+[11:59:24] [Live] Stage:1 | Count:2 | Total:2 | Wait:7943 ms
+[11:59:24] [Live] Stage:1 | Count:2 | Total:2 | Wait:8143 ms
+[11:59:24] [Live] Stage:1 | Count:2 | Total:2 | Wait:8343 ms
+[11:59:25] [Live] Stage:1 | Count:2 | Total:2 | Wait:8543 ms
+[11:59:25] [Live] Stage:1 | Count:2 | Total:2 | Wait:8743 ms
+[11:59:25] [Live] Stage:1 | Count:2 | Total:2 | Wait:8943 ms
+[11:59:26] [Live] Stage:1 | Count:2 | Total:2 | Wait:9143 ms
+[11:59:26] [Live] Stage:1 | Count:2 | Total:2 | Wait:9343 ms
+[11:59:26] [Live] Stage:1 | Count:2 | Total:2 | Wait:9543 ms
+[11:59:27] [Live] Stage:1 | Count:2 | Total:2 | Wait:9743 ms
+[11:59:27] [Live] Stage:1 | Count:2 | Total:2 | Wait:9943 ms
+---------- [STAGE REPORT] ----------
+[11:59:27]  Stage ID      : 1
+[11:59:27]  Total Arcs    : 2
+[11:59:27]  Duration      : 2042 ms
+[11:59:27]  Min Interval  : 1021 ms
+[11:59:27]  Max Interval  : 1021 ms
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[12:00:30]  Status        : Session Closed (Timeout)
+[12:00:30]  Active Time   : 2.042 s
+[12:00:30]  Total Stages  : 1
+[12:00:30]  Grand Total   : 2 pulses
+[12:00:30]  Avg Frequency : 1.96 Hz
+=====================================
+**********************************
+          SYSTEM IS RUNNING
+**********************************
+[12:02:48] LED Self-Test Start......
+[12:02:49] LED Self-Test Done.
+[12:02:49] Waiting for signal pulses...
+[12:02:52] [Live] Stage:1 | Count:1 | Total:1 | Wait:135 ms
+[12:02:52] [Live] Stage:1 | Count:1 | Total:1 | Wait:335 ms
+[12:02:52] [Live] Stage:1 | Count:1 | Total:1 | Wait:535 ms
+[12:02:53] [Live] Stage:1 | Count:1 | Total:1 | Wait:735 ms
+[12:02:53] [Live] Stage:1 | Count:1 | Total:1 | Wait:935 ms
+[12:02:53] [Live] Stage:1 | Count:1 | Total:1 | Wait:1135 ms
+[12:02:53] [Live] Stage:1 | Count:1 | Total:1 | Wait:1335 ms
+[12:02:54] [Live] Stage:1 | Count:1 | Total:1 | Wait:1535 ms
+[12:02:54] [Live] Stage:1 | Count:1 | Total:1 | Wait:1735 ms
+[12:02:54] [Live] Stage:1 | Count:1 | Total:1 | Wait:1935 ms
+[12:02:55] [Live] Stage:1 | Count:1 | Total:1 | Wait:2135 ms
+[12:02:55] [Live] Stage:1 | Count:1 | Total:1 | Wait:2335 ms
+[12:02:55] [Live] Stage:1 | Count:1 | Total:1 | Wait:2535 ms
+[12:02:56] [Live] Stage:1 | Count:1 | Total:1 | Wait:2735 ms
+[12:02:56] [Live] Stage:1 | Count:1 | Total:1 | Wait:2935 ms
+[12:02:56] [Live] Stage:1 | Count:1 | Total:1 | Wait:3135 ms
+[12:02:57] [Live] Stage:1 | Count:1 | Total:1 | Wait:3335 ms
+[12:02:57] [Live] Stage:1 | Count:1 | Total:1 | Wait:3535 ms
+[12:02:57] [Live] Stage:1 | Count:1 | Total:1 | Wait:3735 ms
+[12:02:58] [Live] Stage:1 | Count:1 | Total:1 | Wait:3935 ms
+[12:02:58] [Live] Stage:1 | Count:1 | Total:1 | Wait:4135 ms
+[12:02:58] [Live] Stage:1 | Count:1 | Total:1 | Wait:4335 ms
+[12:02:59] [Live] Stage:1 | Count:1 | Total:1 | Wait:4535 ms
+[12:02:59] [Live] Stage:1 | Count:1 | Total:1 | Wait:4735 ms
+[12:02:59] [Live] Stage:1 | Count:1 | Total:1 | Wait:4935 ms
+[12:02:59] [Live] Stage:1 | Count:1 | Total:1 | Wait:5135 ms
+[12:03:00] [Live] Stage:1 | Count:1 | Total:1 | Wait:5335 ms
+[12:03:00] [Live] Stage:1 | Count:1 | Total:1 | Wait:5535 ms
+[12:03:00] [Live] Stage:1 | Count:1 | Total:1 | Wait:5735 ms
+[12:03:00] [Live] Stage:1 | Count:1 | Total:1 | Wait:5935 ms
+[12:03:01] [Live] Stage:1 | Count:1 | Total:1 | Wait:6135 ms
+[12:03:01] [Live] Stage:1 | Count:1 | Total:1 | Wait:6335 ms
+[12:03:01] [Live] Stage:1 | Count:1 | Total:1 | Wait:6535 ms
+[12:03:02] [Live] Stage:1 | Count:1 | Total:1 | Wait:6735 ms
+[12:03:02] [Live] Stage:1 | Count:1 | Total:1 | Wait:6935 ms
+[12:03:02] [Live] Stage:1 | Count:1 | Total:1 | Wait:7135 ms
+[12:03:03] [Live] Stage:1 | Count:1 | Total:1 | Wait:7335 ms
+[12:03:03] [Live] Stage:1 | Count:1 | Total:1 | Wait:7535 ms
+[12:03:03] [Live] Stage:1 | Count:1 | Total:1 | Wait:7735 ms
+[12:03:04] [Live] Stage:1 | Count:1 | Total:1 | Wait:7935 ms
+[12:03:04] [Live] Stage:1 | Count:1 | Total:1 | Wait:8135 ms
+[12:03:04] [Live] Stage:1 | Count:1 | Total:1 | Wait:8335 ms
+[12:03:05] [Live] Stage:1 | Count:1 | Total:1 | Wait:8535 ms
+[12:03:05] [Live] Stage:1 | Count:1 | Total:1 | Wait:8735 ms
+[12:03:05] [Live] Stage:1 | Count:1 | Total:1 | Wait:8935 ms
+[12:03:05] [Live] Stage:1 | Count:1 | Total:1 | Wait:9135 ms
+[12:03:06] [Live] Stage:1 | Count:1 | Total:1 | Wait:9335 ms
+[12:03:06] [Live] Stage:1 | Count:1 | Total:1 | Wait:9535 ms
+[12:03:06] [Live] Stage:1 | Count:1 | Total:1 | Wait:9735 ms
+[12:03:07] [Live] Stage:1 | Count:1 | Total:1 | Wait:9935 ms
+---------- [STAGE REPORT] ----------
+[12:03:07]  Stage ID        : 1
+[12:03:07]  Status          : EVENT COMPLETED (Short/Spark)
+[12:03:07]  Total Pulses    : 1
+[12:03:07]  Duration        : <10s (Single Pulse)
+[12:03:07]  Interval        : N/A   (Single Pulse)
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[12:04:10]  Status          : Session Closed (Timeout)
+[12:04:10]  Active Time    : >60s !!! (Single Pulse)
+[12:04:10]  Total Stages    : 1
+[12:04:10]  Grand Total     : 1 pulses
+=====================================
+**********************************
+          SYSTEM IS RUNNING
+**********************************
+[12:06:19] LED Self-Test Start......
+[12:06:20] LED Self-Test Done.
+[12:06:20] Waiting for signal pulses...
+**********************************
+          SYSTEM IS RUNNING
+**********************************
+[12:06:34] LED Self-Test Start......
+[12:06:36] LED Self-Test Done.
+[12:06:36] Waiting for signal pulses...
+[12:07:12] [Live] Stage:1 | Count:1 | Total:1 | Wait:135 ms
+[12:07:12] [Live] Stage:1 | Count:1 | Total:1 | Wait:335 ms
+[12:07:12] [Live] Stage:1 | Count:1 | Total:1 | Wait:535 ms
+[12:07:13] [Live] Stage:1 | Count:1 | Total:1 | Wait:735 ms
+[12:07:13] [Live] Stage:1 | Count:1 | Total:1 | Wait:935 ms
+[12:07:13] [Live] Stage:1 | Count:1 | Total:1 | Wait:1135 ms
+[12:07:14] [Live] Stage:1 | Count:1 | Total:1 | Wait:1335 ms
+[12:07:14] [Live] Stage:1 | Count:1 | Total:1 | Wait:1535 ms
+[12:07:14] [Live] Stage:1 | Count:1 | Total:1 | Wait:1735 ms
+[12:07:15] [Live] Stage:1 | Count:1 | Total:1 | Wait:1935 ms
+[12:07:15] [Live] Stage:1 | Count:1 | Total:1 | Wait:2135 ms
+[12:07:15] [Live] Stage:1 | Count:1 | Total:1 | Wait:2335 ms
+[12:07:15] [Live] Stage:1 | Count:1 | Total:1 | Wait:2535 ms
+[12:07:16] [Live] Stage:1 | Count:1 | Total:1 | Wait:2735 ms
+[12:07:16] [Live] Stage:1 | Count:1 | Total:1 | Wait:2935 ms
+[12:07:16] [Live] Stage:1 | Count:1 | Total:1 | Wait:3135 ms
+[12:07:17] [Live] Stage:1 | Count:1 | Total:1 | Wait:3335 ms
+[12:07:17] [Live] Stage:1 | Count:1 | Total:1 | Wait:3535 ms
+[12:07:17] [Live] Stage:1 | Count:1 | Total:1 | Wait:3735 ms
+[12:07:18] [Live] Stage:1 | Count:1 | Total:1 | Wait:3935 ms
+[12:07:18] [Live] Stage:1 | Count:1 | Total:1 | Wait:4135 ms
+[12:07:18] [Live] Stage:1 | Count:1 | Total:1 | Wait:4335 ms
+[12:07:19] [Live] Stage:1 | Count:1 | Total:1 | Wait:4535 ms
+[12:07:19] [Live] Stage:1 | Count:1 | Total:1 | Wait:4735 ms
+[12:07:19] [Live] Stage:1 | Count:1 | Total:1 | Wait:4935 ms
+[12:07:20] [Live] Stage:1 | Count:1 | Total:1 | Wait:5135 ms
+[12:07:20] [Live] Stage:1 | Count:1 | Total:1 | Wait:5335 ms
+[12:07:20] [Live] Stage:1 | Count:1 | Total:1 | Wait:5535 ms
+[12:07:20] [Live] Stage:1 | Count:1 | Total:1 | Wait:5735 ms
+[12:07:21] [Live] Stage:1 | Count:1 | Total:1 | Wait:5935 ms
+[12:07:21] [Live] Stage:1 | Count:1 | Total:1 | Wait:6135 ms
+[12:07:21] [Live] Stage:1 | Count:1 | Total:1 | Wait:6335 ms
+[12:07:22] [Live] Stage:1 | Count:1 | Total:1 | Wait:6535 ms
+[12:07:22] [Live] Stage:1 | Count:1 | Total:1 | Wait:6735 ms
+[12:07:22] [Live] Stage:1 | Count:1 | Total:1 | Wait:6935 ms
+[12:07:23] [Live] Stage:1 | Count:1 | Total:1 | Wait:7135 ms
+[12:07:23] [Live] Stage:1 | Count:1 | Total:1 | Wait:7335 ms
+[12:07:23] [Live] Stage:1 | Count:1 | Total:1 | Wait:7535 ms
+[12:07:24] [Live] Stage:1 | Count:1 | Total:1 | Wait:7735 ms
+[12:07:24] [Live] Stage:1 | Count:1 | Total:1 | Wait:7935 ms
+[12:07:24] [Live] Stage:1 | Count:1 | Total:1 | Wait:8135 ms
+[12:07:25] [Live] Stage:1 | Count:1 | Total:1 | Wait:8335 ms
+[12:07:25] [Live] Stage:1 | Count:1 | Total:1 | Wait:8535 ms
+[12:07:25] [Live] Stage:1 | Count:1 | Total:1 | Wait:8735 ms
+[12:07:25] [Live] Stage:1 | Count:1 | Total:1 | Wait:8935 ms
+[12:07:26] [Live] Stage:1 | Count:1 | Total:1 | Wait:9135 ms
+[12:07:26] [Live] Stage:1 | Count:1 | Total:1 | Wait:9335 ms
+[12:07:26] [Live] Stage:1 | Count:1 | Total:1 | Wait:9535 ms
+[12:07:27] [Live] Stage:1 | Count:1 | Total:1 | Wait:9735 ms
+[12:07:27] [Live] Stage:1 | Count:1 | Total:1 | Wait:9935 ms
+---------- [STAGE REPORT] ----------
+[12:07:27]  Stage ID        : 1
+[12:07:27]  Status          : EVENT COMPLETED (Short/Spark)
+[12:07:27]  Total Pulses    : 1
+[12:07:27]  Duration        : <10s (Single Pulse)
+[12:07:27]  Interval        : N/A   (Single Pulse)
+------------------------------------
+[12:07:53] [Live] Stage:2 | Count:1 | Total:2 | Wait:134 ms
+[12:07:53] [Live] Stage:2 | Count:1 | Total:2 | Wait:334 ms
+[12:07:53] [Live] Stage:2 | Count:1 | Total:2 | Wait:534 ms
+[12:07:54] [Live] Stage:2 | Count:1 | Total:2 | Wait:734 ms
+[12:07:54] [Live] Stage:2 | Count:1 | Total:2 | Wait:934 ms
+[12:07:54] [Live] Stage:2 | Count:1 | Total:2 | Wait:1134 ms
+[12:07:55] [Live] Stage:2 | Count:1 | Total:2 | Wait:1334 ms
+[12:07:55] [Live] Stage:2 | Count:1 | Total:2 | Wait:1534 ms
+[12:07:55] [Live] Stage:2 | Count:1 | Total:2 | Wait:1734 ms
+[12:07:56] [Live] Stage:2 | Count:1 | Total:2 | Wait:1934 ms
+[12:07:56] [Live] Stage:2 | Count:1 | Total:2 | Wait:2134 ms
+[12:07:56] [Live] Stage:2 | Count:1 | Total:2 | Wait:2334 ms
+[12:07:57] [Live] Stage:2 | Count:1 | Total:2 | Wait:2534 ms
+[12:07:57] [Live] Stage:2 | Count:1 | Total:2 | Wait:2734 ms
+[12:07:57] [Live] Stage:2 | Count:1 | Total:2 | Wait:2934 ms
+[12:07:57] [Live] Stage:2 | Count:1 | Total:2 | Wait:3134 ms
+[12:07:58] [Live] Stage:2 | Count:1 | Total:2 | Wait:3334 ms
+[12:07:58] [Live] Stage:2 | Count:1 | Total:2 | Wait:3534 ms
+[12:07:58] [Live] Stage:2 | Count:1 | Total:2 | Wait:3734 ms
+[12:07:59] [Live] Stage:2 | Count:1 | Total:2 | Wait:3934 ms
+[12:07:59] [Live] Stage:2 | Count:1 | Total:2 | Wait:4134 ms
+[12:07:59] [Live] Stage:2 | Count:1 | Total:2 | Wait:4334 ms
+[12:08:00] [Live] Stage:2 | Count:1 | Total:2 | Wait:4534 ms
+[12:08:00] [Live] Stage:2 | Count:1 | Total:2 | Wait:4734 ms
+[12:08:00] [Live] Stage:2 | Count:1 | Total:2 | Wait:4934 ms
+[12:08:01] [Live] Stage:2 | Count:1 | Total:2 | Wait:5134 ms
+[12:08:01] [Live] Stage:2 | Count:1 | Total:2 | Wait:5334 ms
+[12:08:01] [Live] Stage:2 | Count:1 | Total:2 | Wait:5534 ms
+[12:08:01] [Live] Stage:2 | Count:1 | Total:2 | Wait:5734 ms
+[12:08:02] [Live] Stage:2 | Count:1 | Total:2 | Wait:5934 ms
+[12:08:02] [Live] Stage:2 | Count:1 | Total:2 | Wait:6134 ms
+[12:08:02] [Live] Stage:2 | Count:1 | Total:2 | Wait:6334 ms
+[12:08:03] [Live] Stage:2 | Count:1 | Total:2 | Wait:6534 ms
+[12:08:03] [Live] Stage:2 | Count:1 | Total:2 | Wait:6734 ms
+[12:08:03] [Live] Stage:2 | Count:1 | Total:2 | Wait:6934 ms
+[12:08:04] [Live] Stage:2 | Count:1 | Total:2 | Wait:7134 ms
+[12:08:04] [Live] Stage:2 | Count:1 | Total:2 | Wait:7334 ms
+[12:08:04] [Live] Stage:2 | Count:1 | Total:2 | Wait:7534 ms
+[12:08:05] [Live] Stage:2 | Count:1 | Total:2 | Wait:7734 ms
+[12:08:05] [Live] Stage:2 | Count:1 | Total:2 | Wait:7934 ms
+[12:08:05] [Live] Stage:2 | Count:1 | Total:2 | Wait:8134 ms
+[12:08:06] [Live] Stage:2 | Count:1 | Total:2 | Wait:8334 ms
+[12:08:06] [Live] Stage:2 | Count:1 | Total:2 | Wait:8534 ms
+[12:08:06] [Live] Stage:2 | Count:1 | Total:2 | Wait:8734 ms
+[12:08:06] [Live] Stage:2 | Count:1 | Total:2 | Wait:8934 ms
+[12:08:07] [Live] Stage:2 | Count:1 | Total:2 | Wait:9134 ms
+[12:08:07] [Live] Stage:2 | Count:1 | Total:2 | Wait:9334 ms
+[12:08:07] [Live] Stage:2 | Count:1 | Total:2 | Wait:9534 ms
+[12:08:08] [Live] Stage:2 | Count:1 | Total:2 | Wait:9734 ms
+[12:08:08] [Live] Stage:2 | Count:1 | Total:2 | Wait:9934 ms
+---------- [STAGE REPORT] ----------
+[12:08:08]  Stage ID        : 2
+[12:08:08]  Status          : EVENT COMPLETED (Short/Spark)
+[12:08:08]  Total Pulses    : 1
+[12:08:08]  Duration        : <10s (Single Pulse)
+[12:08:08]  Interval        : N/A   (Single Pulse)
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[12:09:11]  Status          : Session Closed (Timeout)
+[12:09:11]  Active Time    : 0.000 s
+[12:09:11]  Total Stages    : 2
+[12:09:11]  Grand Total     : 2 pulses
+=====================================
+**********************************
+[13:33:51]         DHJC MONITOR READY
+**********************************
+[13:33:51] LED Self-Test Start......
+[13:33:52] LED Self-Test Done.
+[13:33:52] Waiting for signal pulses...
+[13:34:28] [Live] Stage:1 | P:1 | Tot:1 | Wait:135 ms
+[13:34:29] [Live] Stage:1 | P:1 | Tot:1 | Wait:336 ms
+[13:34:29] [Live] Stage:1 | P:1 | Tot:1 | Wait:537 ms
+[13:34:29] [Live] Stage:1 | P:1 | Tot:1 | Wait:738 ms
+[13:34:29] [Live] Stage:1 | P:1 | Tot:1 | Wait:939 ms
+[13:34:30] [Live] Stage:1 | P:1 | Tot:1 | Wait:1140 ms
+[13:34:30] [Live] Stage:1 | P:1 | Tot:1 | Wait:1341 ms
+[13:34:30] [Live] Stage:1 | P:1 | Tot:1 | Wait:1542 ms
+[13:34:30] [Live] Stage:1 | P:1 | Tot:1 | Wait:1743 ms
+[13:34:31] [Live] Stage:1 | P:1 | Tot:1 | Wait:1944 ms
+[13:34:31] [Live] Stage:1 | P:1 | Tot:1 | Wait:2145 ms
+[13:34:31] [Live] Stage:1 | P:1 | Tot:1 | Wait:2346 ms
+[13:34:31] [Live] Stage:1 | P:1 | Tot:1 | Wait:2547 ms
+[13:34:32] [Live] Stage:1 | P:1 | Tot:1 | Wait:2748 ms
+[13:34:32] [Live] Stage:1 | P:1 | Tot:1 | Wait:2949 ms
+[13:34:32] [Live] Stage:1 | P:1 | Tot:1 | Wait:3150 ms
+[13:34:32] [Live] Stage:1 | P:1 | Tot:1 | Wait:3351 ms
+[13:34:33] [Live] Stage:1 | P:1 | Tot:1 | Wait:3552 ms
+[13:34:33] [Live] Stage:1 | P:1 | Tot:1 | Wait:3753 ms
+[13:34:33] [Live] Stage:1 | P:1 | Tot:1 | Wait:3954 ms
+[13:34:33] [Live] Stage:1 | P:1 | Tot:1 | Wait:4155 ms
+[13:34:34] [Live] Stage:1 | P:1 | Tot:1 | Wait:4356 ms
+[13:34:34] [Live] Stage:1 | P:1 | Tot:1 | Wait:4557 ms
+[13:34:34] [Live] Stage:1 | P:1 | Tot:1 | Wait:4758 ms
+[13:34:34] [Live] Stage:1 | P:1 | Tot:1 | Wait:4959 ms
+[13:34:35] [Live] Stage:1 | P:1 | Tot:1 | Wait:5160 ms
+[13:34:35] [Live] Stage:1 | P:1 | Tot:1 | Wait:5361 ms
+[13:34:35] [Live] Stage:1 | P:1 | Tot:1 | Wait:5562 ms
+[13:34:35] [Live] Stage:1 | P:1 | Tot:1 | Wait:5763 ms
+[13:34:36] [Live] Stage:1 | P:1 | Tot:1 | Wait:5964 ms
+[13:34:36] [Live] Stage:1 | P:1 | Tot:1 | Wait:6165 ms
+[13:34:36] [Live] Stage:1 | P:1 | Tot:1 | Wait:6366 ms
+[13:34:37] [Live] Stage:1 | P:1 | Tot:1 | Wait:6567 ms
+[13:34:37] [Live] Stage:1 | P:1 | Tot:1 | Wait:6768 ms
+[13:34:37] [Live] Stage:1 | P:1 | Tot:1 | Wait:6969 ms
+[13:34:37] [Live] Stage:1 | P:1 | Tot:1 | Wait:7170 ms
+[13:34:38] [Live] Stage:1 | P:1 | Tot:1 | Wait:7371 ms
+[13:34:38] [Live] Stage:1 | P:1 | Tot:1 | Wait:7572 ms
+[13:34:38] [Live] Stage:1 | P:1 | Tot:1 | Wait:7773 ms
+[13:34:39] [Live] Stage:1 | P:1 | Tot:1 | Wait:7974 ms
+[13:34:39] [Live] Stage:1 | P:1 | Tot:1 | Wait:8175 ms
+[13:34:39] [Live] Stage:1 | P:1 | Tot:1 | Wait:8376 ms
+[13:34:40] [Live] Stage:1 | P:1 | Tot:1 | Wait:8577 ms
+[13:34:40] [Live] Stage:1 | P:1 | Tot:1 | Wait:8778 ms
+[13:34:40] [Live] Stage:1 | P:1 | Tot:1 | Wait:8979 ms
+[13:34:41] [Live] Stage:1 | P:1 | Tot:1 | Wait:9180 ms
+[13:34:41] [Live] Stage:1 | P:1 | Tot:1 | Wait:9381 ms
+[13:34:41] [Live] Stage:1 | P:1 | Tot:1 | Wait:9582 ms
+[13:34:41] [Live] Stage:1 | P:1 | Tot:1 | Wait:9783 ms
+[13:34:42] [Live] Stage:1 | P:1 | Tot:1 | Wait:9984 ms
+---------- [STAGE REPORT] ----------
+[13:34:42]  Stage ID       : 1
+[13:34:42]  Status         : EVENT COMPLETED (Short/Spark)
+[13:34:42]  Total Pulses   : 1
+[13:34:42]  Duration       : <10s (Single Short Pulse)
+[13:34:42]  Interval       : N/A (Single Pulse)
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[13:35:45]  Status         : Session Closed (Timeout)
+[13:35:45]  Active Time    : 0.000 s
+[13:35:45]  Total Stages   : 1
+[13:35:45]  Grand Total    : 1 pulses
+=====================================
+[2J[HSYSTEM RESET OK.
+**********************************
+[13:36:40]         DHJC MONITOR READY
+**********************************
+[13:36:40] LED Self-Test Start......
+[13:36:42] LED Self-Test Done.
+[13:36:42] Waiting for signal pulses...
+**********************************
+[13:36:49]         DHJC MONITOR READY
+**********************************
+[13:36:49] LED Self-Test Start......
+[13:36:50] LED Self-Test Done.
+[13:36:50] Waiting for signal pulses...
+[13:36:55] [Live] Stage:1 | P:1 | Tot:1 | Wait:135 ms
+[13:36:55] [Live] Stage:1 | P:1 | Tot:1 | Wait:336 ms
+[13:36:56] [Live] Stage:1 | P:1 | Tot:1 | Wait:537 ms
+[13:36:56] [Live] Stage:1 | P:1 | Tot:1 | Wait:738 ms
+[13:36:56] [Live] Stage:1 | P:1 | Tot:1 | Wait:939 ms
+[13:36:56] [Live] Stage:1 | P:1 | Tot:1 | Wait:1140 ms
+[13:36:57] [Live] Stage:1 | P:1 | Tot:1 | Wait:1341 ms
+[13:36:57] [Live] Stage:1 | P:1 | Tot:1 | Wait:1542 ms
+[13:36:57] [Live] Stage:1 | P:1 | Tot:1 | Wait:1743 ms
+[13:36:58] [Live] Stage:1 | P:1 | Tot:1 | Wait:1944 ms
+[13:36:58] [Live] Stage:1 | P:1 | Tot:1 | Wait:2145 ms
+[13:36:58] [Live] Stage:1 | P:1 | Tot:1 | Wait:2346 ms
+[13:36:58] [Live] Stage:1 | P:1 | Tot:1 | Wait:2547 ms
+[13:36:59] [Live] Stage:1 | P:1 | Tot:1 | Wait:2748 ms
+[13:36:59] [Live] Stage:1 | P:1 | Tot:1 | Wait:2949 ms
+[13:36:59] [Live] Stage:1 | P:1 | Tot:1 | Wait:3150 ms
+[13:36:59] [Live] Stage:1 | P:1 | Tot:1 | Wait:3351 ms
+[13:37:00] [Live] Stage:1 | P:1 | Tot:1 | Wait:3552 ms
+[13:37:00] [Live] Stage:1 | P:1 | Tot:1 | Wait:3753 ms
+[13:37:00] [Live] Stage:1 | P:1 | Tot:1 | Wait:3954 ms
+[13:37:01] [Live] Stage:1 | P:1 | Tot:1 | Wait:4155 ms
+[13:37:01] [Live] Stage:1 | P:1 | Tot:1 | Wait:4356 ms
+[13:37:01] [Live] Stage:1 | P:1 | Tot:1 | Wait:4557 ms
+[13:37:01] [Live] Stage:1 | P:1 | Tot:1 | Wait:4758 ms
+[13:37:02] [Live] Stage:1 | P:1 | Tot:1 | Wait:4959 ms
+[13:37:02] [Live] Stage:1 | P:1 | Tot:1 | Wait:5160 ms
+[13:37:02] [Live] Stage:1 | P:1 | Tot:1 | Wait:5361 ms
+[13:37:02] [Live] Stage:1 | P:1 | Tot:1 | Wait:5562 ms
+[13:37:03] [Live] Stage:1 | P:1 | Tot:1 | Wait:5763 ms
+[13:37:03] [Live] Stage:1 | P:1 | Tot:1 | Wait:5964 ms
+[13:37:03] [Live] Stage:1 | P:1 | Tot:1 | Wait:6165 ms
+[13:37:03] [Live] Stage:1 | P:1 | Tot:1 | Wait:6366 ms
+[13:37:04] [Live] Stage:1 | P:1 | Tot:1 | Wait:6567 ms
+[13:37:04] [Live] Stage:1 | P:1 | Tot:1 | Wait:6768 ms
+[13:37:04] [Live] Stage:1 | P:1 | Tot:1 | Wait:6969 ms
+[13:37:04] [Live] Stage:1 | P:1 | Tot:1 | Wait:7170 ms
+[13:37:05] [Live] Stage:1 | P:1 | Tot:1 | Wait:7371 ms
+[13:37:05] [Live] Stage:1 | P:1 | Tot:1 | Wait:7572 ms
+[13:37:05] [Live] Stage:1 | P:1 | Tot:1 | Wait:7773 ms
+[13:37:05] [Live] Stage:1 | P:1 | Tot:1 | Wait:7974 ms
+[13:37:06] [Live] Stage:1 | P:1 | Tot:1 | Wait:8175 ms
+[13:37:06] [Live] Stage:1 | P:1 | Tot:1 | Wait:8376 ms
+[13:37:06] [Live] Stage:1 | P:1 | Tot:1 | Wait:8577 ms
+[13:37:06] [Live] Stage:1 | P:1 | Tot:1 | Wait:8778 ms
+[13:37:07] [Live] Stage:1 | P:1 | Tot:1 | Wait:8979 ms
+[13:37:07] [Live] Stage:1 | P:1 | Tot:1 | Wait:9180 ms
+[13:37:07] [Live] Stage:1 | P:1 | Tot:1 | Wait:9381 ms
+[13:37:07] [Live] Stage:1 | P:1 | Tot:1 | Wait:9582 ms
+[13:37:08] [Live] Stage:1 | P:1 | Tot:1 | Wait:9783 ms
+[13:37:08] [Live] Stage:1 | P:1 | Tot:1 | Wait:9984 ms
+---------- [STAGE REPORT] ----------
+[13:37:08]  Stage ID       : 1
+[13:37:08]  Status         : EVENT COMPLETED (Short/Spark)
+[13:37:08]  Total Pulses   : 1
+[13:37:08]  Duration       : <10s (Single Short Pulse)
+[13:37:08]  Interval       : N/A (Single Pulse)
+------------------------------------
+[13:37:21] [Live] Stage:2 | P:1 | Tot:2 | Wait:185 ms
+[13:37:21] [Live] Stage:2 | P:1 | Tot:2 | Wait:386 ms
+[13:37:22] [Live] Stage:2 | P:1 | Tot:2 | Wait:587 ms
+[13:37:22] [Live] Stage:2 | P:1 | Tot:2 | Wait:788 ms
+[13:37:22] [Live] Stage:2 | P:1 | Tot:2 | Wait:989 ms
+[13:37:22] [Live] Stage:2 | P:1 | Tot:2 | Wait:1190 ms
+[13:37:23] [Live] Stage:2 | P:1 | Tot:2 | Wait:1391 ms
+[13:37:23] [Live] Stage:2 | P:1 | Tot:2 | Wait:1592 ms
+[13:37:23] [Live] Stage:2 | P:1 | Tot:2 | Wait:1793 ms
+[13:37:24] [Live] Stage:2 | P:1 | Tot:2 | Wait:1994 ms
+[13:37:24] [Live] Stage:2 | P:1 | Tot:2 | Wait:2195 ms
+[13:37:24] [Live] Stage:2 | P:1 | Tot:2 | Wait:2396 ms
+[13:37:25] [Live] Stage:2 | P:1 | Tot:2 | Wait:2597 ms
+[13:37:25] [Live] Stage:2 | P:1 | Tot:2 | Wait:2798 ms
+[13:37:25] [Live] Stage:2 | P:1 | Tot:2 | Wait:2999 ms
+[13:37:26] [Live] Stage:2 | P:1 | Tot:2 | Wait:3200 ms
+[13:37:26] [Live] Stage:2 | P:1 | Tot:2 | Wait:3401 ms
+[13:37:26] [Live] Stage:2 | P:1 | Tot:2 | Wait:3602 ms
+[13:37:26] [Live] Stage:2 | P:1 | Tot:2 | Wait:3803 ms
+[13:37:27] [Live] Stage:2 | P:1 | Tot:2 | Wait:4004 ms
+[13:37:27] [Live] Stage:2 | P:1 | Tot:2 | Wait:4205 ms
+[13:37:27] [Live] Stage:2 | P:1 | Tot:2 | Wait:4406 ms
+[13:37:28] [Live] Stage:2 | P:1 | Tot:2 | Wait:4607 ms
+[13:37:28] [Live] Stage:2 | P:1 | Tot:2 | Wait:4808 ms
+[13:37:28] [Live] Stage:2 | P:1 | Tot:2 | Wait:5009 ms
+[13:37:29] [Live] Stage:2 | P:1 | Tot:2 | Wait:5210 ms
+[13:37:29] [Live] Stage:2 | P:1 | Tot:2 | Wait:5411 ms
+[13:37:29] [Live] Stage:2 | P:1 | Tot:2 | Wait:5612 ms
+[13:37:30] [Live] Stage:2 | P:1 | Tot:2 | Wait:5813 ms
+[13:37:30] [Live] Stage:2 | P:1 | Tot:2 | Wait:6014 ms
+[13:37:30] [Live] Stage:2 | P:1 | Tot:2 | Wait:6215 ms
+[13:37:31] [Live] Stage:2 | P:1 | Tot:2 | Wait:6416 ms
+[13:37:31] [Live] Stage:2 | P:1 | Tot:2 | Wait:6617 ms
+[13:37:31] [Live] Stage:2 | P:1 | Tot:2 | Wait:6818 ms
+[13:37:31] [Live] Stage:2 | P:1 | Tot:2 | Wait:7019 ms
+[13:37:32] [Live] Stage:2 | P:1 | Tot:2 | Wait:7220 ms
+[13:37:32] [Live] Stage:2 | P:1 | Tot:2 | Wait:7421 ms
+[13:37:32] [Live] Stage:2 | P:1 | Tot:2 | Wait:7622 ms
+[13:37:33] [Live] Stage:2 | P:1 | Tot:2 | Wait:7823 ms
+[13:37:33] [Live] Stage:2 | P:1 | Tot:2 | Wait:8024 ms
+[13:37:33] [Live] Stage:2 | P:1 | Tot:2 | Wait:8225 ms
+[13:37:34] [Live] Stage:2 | P:1 | Tot:2 | Wait:8426 ms
+[13:37:34] [Live] Stage:2 | P:1 | Tot:2 | Wait:8627 ms
+[13:37:34] [Live] Stage:2 | P:1 | Tot:2 | Wait:8828 ms
+[13:37:35] [Live] Stage:2 | P:1 | Tot:2 | Wait:9029 ms
+[13:37:35] [Live] Stage:2 | P:1 | Tot:2 | Wait:9230 ms
+[13:37:35] [Live] Stage:2 | P:1 | Tot:2 | Wait:9431 ms
+[13:37:36] [Live] Stage:2 | P:1 | Tot:2 | Wait:9632 ms
+[13:37:36] [Live] Stage:2 | P:1 | Tot:2 | Wait:9833 ms
+---------- [STAGE REPORT] ----------
+[13:37:36]  Stage ID       : 2
+[13:37:36]  Status         : EVENT COMPLETED (Short/Spark)
+[13:37:36]  Total Pulses   : 1
+[13:37:36]  Duration       : <10s (Single Short Pulse)
+[13:37:36]  Interval       : N/A (Single Pulse)
+------------------------------------
+**********************************
+[13:37:52]         DHJC MONITOR READY
+**********************************
+[13:37:52] LED Self-Test Start......
+[13:37:53] LED Self-Test Done.
+[13:37:53] Waiting for signal pulses...
+[13:37:58] [Live] Stage:1 | P:1 | Tot:1 | Wait:135 ms
+[13:37:59] [Live] Stage:1 | P:1 | Tot:1 | Wait:336 ms
+[13:37:59] [Live] Stage:1 | P:1 | Tot:1 | Wait:537 ms
+[13:37:59] [Live] Stage:1 | P:1 | Tot:1 | Wait:738 ms
+[13:37:59] [Live] Stage:1 | P:1 | Tot:1 | Wait:939 ms
+[13:38:00] [Live] Stage:1 | P:1 | Tot:1 | Wait:1140 ms
+[13:38:00] [Live] Stage:1 | P:1 | Tot:1 | Wait:1341 ms
+[13:38:00] [Live] Stage:1 | P:1 | Tot:1 | Wait:1542 ms
+[13:38:01] [Live] Stage:1 | P:1 | Tot:1 | Wait:1743 ms
+[13:38:01] [Live] Stage:1 | P:1 | Tot:1 | Wait:1944 ms
+[13:38:01] [Live] Stage:1 | P:1 | Tot:1 | Wait:2145 ms
+[13:38:02] [Live] Stage:1 | P:1 | Tot:1 | Wait:2346 ms
+[13:38:02] [Live] Stage:1 | P:1 | Tot:1 | Wait:2547 ms
+[13:38:02] [Live] Stage:1 | P:1 | Tot:1 | Wait:2748 ms
+[13:38:02] [Live] Stage:1 | P:1 | Tot:1 | Wait:2949 ms
+[13:38:03] [Live] Stage:1 | P:1 | Tot:1 | Wait:3150 ms
+[13:38:03] [Live] Stage:1 | P:1 | Tot:1 | Wait:3351 ms
+[13:38:03] [Live] Stage:1 | P:1 | Tot:1 | Wait:3552 ms
+[13:38:03] [Live] Stage:1 | P:1 | Tot:1 | Wait:3753 ms
+[13:38:04] [Live] Stage:1 | P:1 | Tot:1 | Wait:3954 ms
+[13:38:04] [Live] Stage:1 | P:1 | Tot:1 | Wait:4155 ms
+[13:38:04] [Live] Stage:1 | P:1 | Tot:1 | Wait:4356 ms
+[13:38:04] [Live] Stage:1 | P:1 | Tot:1 | Wait:4557 ms
+[13:38:05] [Live] Stage:1 | P:1 | Tot:1 | Wait:4758 ms
+[13:38:05] [Live] Stage:1 | P:1 | Tot:1 | Wait:4959 ms
+[13:38:05] [Live] Stage:1 | P:1 | Tot:1 | Wait:5160 ms
+[13:38:05] [Live] Stage:1 | P:1 | Tot:1 | Wait:5361 ms
+[13:38:06] [Live] Stage:1 | P:1 | Tot:1 | Wait:5562 ms
+[13:38:06] [Live] Stage:1 | P:1 | Tot:1 | Wait:5763 ms
+[13:38:06] [Live] Stage:1 | P:1 | Tot:1 | Wait:5964 ms
+[13:38:06] [Live] Stage:1 | P:1 | Tot:1 | Wait:6165 ms
+[13:38:07] [Live] Stage:1 | P:1 | Tot:1 | Wait:6366 ms
+[13:38:07] [Live] Stage:1 | P:1 | Tot:1 | Wait:6567 ms
+[13:38:07] [Live] Stage:1 | P:1 | Tot:1 | Wait:6768 ms
+[13:38:07] [Live] Stage:1 | P:1 | Tot:1 | Wait:6969 ms
+[13:38:08] [Live] Stage:1 | P:1 | Tot:1 | Wait:7170 ms
+[13:38:08] [Live] Stage:1 | P:1 | Tot:1 | Wait:7371 ms
+[13:38:08] [Live] Stage:1 | P:1 | Tot:1 | Wait:7572 ms
+[13:38:08] [Live] Stage:1 | P:1 | Tot:1 | Wait:7773 ms
+[13:38:09] [Live] Stage:1 | P:1 | Tot:1 | Wait:7974 ms
+[13:38:09] [Live] Stage:1 | P:1 | Tot:1 | Wait:8175 ms
+[13:38:09] [Live] Stage:1 | P:1 | Tot:1 | Wait:8376 ms
+[13:38:09] [Live] Stage:1 | P:1 | Tot:1 | Wait:8577 ms
+[13:38:10] [Live] Stage:1 | P:1 | Tot:1 | Wait:8778 ms
+[13:38:10] [Live] Stage:1 | P:1 | Tot:1 | Wait:8979 ms
+[13:38:10] [Live] Stage:1 | P:1 | Tot:1 | Wait:9180 ms
+[13:38:10] [Live] Stage:1 | P:1 | Tot:1 | Wait:9381 ms
+[13:38:11] [Live] Stage:1 | P:1 | Tot:1 | Wait:9582 ms
+[13:38:11] [Live] Stage:1 | P:1 | Tot:1 | Wait:9783 ms
+[13:38:11] [Live] Stage:1 | P:1 | Tot:1 | Wait:9984 ms
+---------- [STAGE REPORT] ----------
+[13:38:11]  Stage ID       : 1
+[13:38:11]  Status         : EVENT COMPLETED (Short/Spark)
+[13:38:11]  Total Pulses   : 1
+[13:38:11]  Duration       : <10s (Single Short Pulse)
+[13:38:11]  Interval       : N/A (Single Pulse)
+------------------------------------
+[13:38:24] [Live] Stage:2 | P:1 | Tot:2 | Wait:185 ms
+[13:38:24] [Live] Stage:2 | P:1 | Tot:2 | Wait:386 ms
+[13:38:25] [Live] Stage:2 | P:1 | Tot:2 | Wait:587 ms
+[13:38:25] [Live] Stage:2 | P:1 | Tot:2 | Wait:788 ms
+[13:38:25] [Live] Stage:2 | P:1 | Tot:2 | Wait:989 ms
+[13:38:26] [Live] Stage:2 | P:1 | Tot:2 | Wait:1190 ms
+[13:38:26] [Live] Stage:2 | P:1 | Tot:2 | Wait:1391 ms
+[13:38:26] [Live] Stage:2 | P:1 | Tot:2 | Wait:1592 ms
+[13:38:27] [Live] Stage:2 | P:1 | Tot:2 | Wait:1793 ms
+[13:38:27] [Live] Stage:2 | P:1 | Tot:2 | Wait:1994 ms
+[13:38:27] [Live] Stage:2 | P:1 | Tot:2 | Wait:2195 ms
+[13:38:28] [Live] Stage:2 | P:1 | Tot:2 | Wait:2396 ms
+[13:38:28] [Live] Stage:2 | P:1 | Tot:2 | Wait:2597 ms
+[13:38:28] [Live] Stage:2 | P:1 | Tot:2 | Wait:2798 ms
+[13:38:28] [Live] Stage:2 | P:1 | Tot:2 | Wait:2999 ms
+[13:38:29] [Live] Stage:2 | P:1 | Tot:2 | Wait:3200 ms
+[13:38:29] [Live] Stage:2 | P:1 | Tot:2 | Wait:3401 ms
+[13:38:29] [Live] Stage:2 | P:1 | Tot:2 | Wait:3602 ms
+[13:38:30] [Live] Stage:2 | P:1 | Tot:2 | Wait:3803 ms
+[13:38:30] [Live] Stage:2 | P:1 | Tot:2 | Wait:4004 ms
+[13:38:30] [Live] Stage:2 | P:1 | Tot:2 | Wait:4205 ms
+[13:38:31] [Live] Stage:2 | P:1 | Tot:2 | Wait:4406 ms
+[13:38:31] [Live] Stage:2 | P:1 | Tot:2 | Wait:4607 ms
+[13:38:31] [Live] Stage:2 | P:1 | Tot:2 | Wait:4808 ms
+[13:38:31] [Live] Stage:2 | P:1 | Tot:2 | Wait:5009 ms
+[13:38:32] [Live] Stage:2 | P:1 | Tot:2 | Wait:5210 ms
+[13:38:32] [Live] Stage:2 | P:1 | Tot:2 | Wait:5411 ms
+[13:38:32] [Live] Stage:2 | P:1 | Tot:2 | Wait:5612 ms
+[13:38:33] [Live] Stage:2 | P:1 | Tot:2 | Wait:5813 ms
+[13:38:33] [Live] Stage:2 | P:1 | Tot:2 | Wait:6014 ms
+[13:38:33] [Live] Stage:2 | P:1 | Tot:2 | Wait:6215 ms
+[13:38:34] [Live] Stage:2 | P:1 | Tot:2 | Wait:6416 ms
+[13:38:34] [Live] Stage:2 | P:1 | Tot:2 | Wait:6617 ms
+[13:38:34] [Live] Stage:2 | P:1 | Tot:2 | Wait:6818 ms
+[13:38:35] [Live] Stage:2 | P:1 | Tot:2 | Wait:7019 ms
+[13:38:35] [Live] Stage:2 | P:1 | Tot:2 | Wait:7220 ms
+[13:38:35] [Live] Stage:2 | P:1 | Tot:2 | Wait:7421 ms
+[13:38:36] [Live] Stage:2 | P:1 | Tot:2 | Wait:7622 ms
+[13:38:36] [Live] Stage:2 | P:1 | Tot:2 | Wait:7823 ms
+[13:38:36] [Live] Stage:2 | P:1 | Tot:2 | Wait:8024 ms
+[13:38:36] [Live] Stage:2 | P:1 | Tot:2 | Wait:8225 ms
+[13:38:37] [Live] Stage:2 | P:1 | Tot:2 | Wait:8426 ms
+[13:38:37] [Live] Stage:2 | P:1 | Tot:2 | Wait:8627 ms
+[13:38:37] [Live] Stage:2 | P:1 | Tot:2 | Wait:8828 ms
+[13:38:38] [Live] Stage:2 | P:1 | Tot:2 | Wait:9029 ms
+[13:38:38] [Live] Stage:2 | P:1 | Tot:2 | Wait:9230 ms
+[13:38:38] [Live] Stage:2 | P:1 | Tot:2 | Wait:9431 ms
+[13:38:39] [Live] Stage:2 | P:1 | Tot:2 | Wait:9632 ms
+[13:38:39] [Live] Stage:2 | P:1 | Tot:2 | Wait:9833 ms
+---------- [STAGE REPORT] ----------
+[13:38:39]  Stage ID       : 2
+[13:38:39]  Status         : EVENT COMPLETED (Short/Spark)
+[13:38:39]  Total Pulses   : 1
+[13:38:39]  Duration       : <10s (Single Short Pulse)
+[13:38:39]  Interval       : N/A (Single Pulse)
+------------------------------------
+**********************************
+Â  Â  Â  Â  SYSTEM IS RUNNINGÂ  Â  Â  Â  Â
+**********************************
+[13:49:09] LED Self-Test Start......
+[13:49:11] LED Self-Test Done.
+[13:49:11] Waiting for signal pulses...
+[13:49:15] [Live] Stage:1 | Count:1 | Total:1 | Wait:135 msÂ  Â
+[13:49:16] [Live] Stage:1 | Count:1 | Total:1 | Wait:335 msÂ  Â
+[13:49:16] [Live] Stage:1 | Count:1 | Total:1 | Wait:535 msÂ  Â
+[13:49:16] [Live] Stage:1 | Count:1 | Total:1 | Wait:735 msÂ  Â
+[13:49:17] [Live] Stage:1 | Count:1 | Total:1 | Wait:935 msÂ  Â
+[13:49:17] [Live] Stage:1 | Count:1 | Total:1 | Wait:1135 msÂ  Â
+[13:49:17] [Live] Stage:1 | Count:1 | Total:1 | Wait:1335 msÂ  Â
+[13:49:18] [Live] Stage:1 | Count:1 | Total:1 | Wait:1535 msÂ  Â
+[13:49:18] [Live] Stage:1 | Count:1 | Total:1 | Wait:1735 msÂ  Â
+[13:49:18] [Live] Stage:1 | Count:1 | Total:1 | Wait:1935 msÂ  Â
+[13:49:19] [Live] Stage:1 | Count:1 | Total:1 | Wait:2135 msÂ  Â
+[13:49:19] [Live] Stage:1 | Count:1 | Total:1 | Wait:2335 msÂ  Â
+[13:49:19] [Live] Stage:1 | Count:1 | Total:1 | Wait:2535 msÂ  Â
+[13:49:19] [Live] Stage:1 | Count:1 | Total:1 | Wait:2735 msÂ  Â
+[13:49:20] [Live] Stage:1 | Count:1 | Total:1 | Wait:2935 msÂ  Â
+[13:49:20] [Live] Stage:1 | Count:1 | Total:1 | Wait:3135 msÂ  Â
+[13:49:20] [Live] Stage:1 | Count:1 | Total:1 | Wait:3335 msÂ  Â
+[13:49:21] [Live] Stage:1 | Count:1 | Total:1 | Wait:3535 msÂ  Â
+[13:49:21] [Live] Stage:1 | Count:1 | Total:1 | Wait:3735 msÂ  Â
+[13:49:21] [Live] Stage:1 | Count:1 | Total:1 | Wait:3935 msÂ  Â
+[13:49:22] [Live] Stage:1 | Count:1 | Total:1 | Wait:4135 msÂ  Â
+[13:49:22] [Live] Stage:1 | Count:1 | Total:1 | Wait:4335 msÂ  Â
+[13:49:22] [Live] Stage:1 | Count:1 | Total:1 | Wait:4535 msÂ  Â
+[13:49:23] [Live] Stage:1 | Count:1 | Total:1 | Wait:4735 msÂ  Â
+[13:49:23] [Live] Stage:1 | Count:1 | Total:1 | Wait:4935 msÂ  Â
+[13:49:23] [Live] Stage:1 | Count:1 | Total:1 | Wait:5135 msÂ  Â
+[13:49:24] [Live] Stage:1 | Count:1 | Total:1 | Wait:5335 msÂ  Â
+[13:49:24] [Live] Stage:1 | Count:1 | Total:1 | Wait:5535 msÂ  Â
+[13:49:24] [Live] Stage:1 | Count:1 | Total:1 | Wait:5735 msÂ  Â
+[13:49:24] [Live] Stage:1 | Count:1 | Total:1 | Wait:5935 msÂ  Â
+[13:49:25] [Live] Stage:1 | Count:1 | Total:1 | Wait:6135 msÂ  Â
+[13:49:25] [Live] Stage:1 | Count:1 | Total:1 | Wait:6335 msÂ  Â
+[13:49:25] [Live] Stage:1 | Count:1 | Total:1 | Wait:6535 msÂ  Â
+[13:49:26] [Live] Stage:1 | Count:1 | Total:1 | Wait:6735 msÂ  Â
+[13:49:26] [Live] Stage:1 | Count:1 | Total:1 | Wait:6935 msÂ  Â
+[13:49:26] [Live] Stage:1 | Count:1 | Total:1 | Wait:7135 msÂ  Â
+[13:49:27] [Live] Stage:1 | Count:1 | Total:1 | Wait:7335 msÂ  Â
+[13:49:27] [Live] Stage:1 | Count:1 | Total:1 | Wait:7535 msÂ  Â
+[13:49:27] [Live] Stage:1 | Count:1 | Total:1 | Wait:7735 msÂ  Â
+[13:49:28] [Live] Stage:1 | Count:1 | Total:1 | Wait:7935 msÂ  Â
+[13:49:28] [Live] Stage:1 | Count:1 | Total:1 | Wait:8135 msÂ  Â
+[13:49:28] [Live] Stage:1 | Count:1 | Total:1 | Wait:8335 msÂ  Â
+[13:49:29] [Live] Stage:1 | Count:1 | Total:1 | Wait:8535 msÂ  Â
+[13:49:29] [Live] Stage:1 | Count:1 | Total:1 | Wait:8735 msÂ  Â
+[13:49:29] [Live] Stage:1 | Count:1 | Total:1 | Wait:8935 msÂ  Â
+[13:49:30] [Live] Stage:1 | Count:1 | Total:1 | Wait:9135 msÂ  Â
+[13:49:30] [Live] Stage:1 | Count:1 | Total:1 | Wait:9335 msÂ  Â
+[13:49:30] [Live] Stage:1 | Count:1 | Total:1 | Wait:9535 msÂ  Â
+[13:49:31] [Live] Stage:1 | Count:1 | Total:1 | Wait:9735 msÂ  Â
+[13:49:31] [Live] Stage:1 | Count:1 | Total:1 | Wait:9935 msÂ  Â
+---------- [STAGE REPORT] ----------
+[13:49:31]  Stage IDÂ  Â  Â  : 1
+[13:49:31]  StatusÂ  Â  Â  Â  : EVENT COMPLETED
+[13:49:31]  Total ArcsÂ  Â  : 1
+[13:49:31]  DurationÂ  Â  Â  : <10s (Single Pulse)
+[13:49:31]  IntervalÂ  Â  Â  : N/AÂ  Â (Single Pulse)
+------------------------------------
+[13:49:44] [Live] Stage:2 | Count:1 | Total:2 | Wait:135 msÂ  Â
+[13:49:44] [Live] Stage:2 | Count:1 | Total:2 | Wait:335 msÂ  Â
+[13:49:44] [Live] Stage:2 | Count:1 | Total:2 | Wait:535 msÂ  Â
+[13:49:45] [Live] Stage:2 | Count:1 | Total:2 | Wait:735 msÂ  Â
+[13:49:45] [Live] Stage:2 | Count:1 | Total:2 | Wait:935 msÂ  Â
+[13:49:45] [Live] Stage:2 | Count:1 | Total:2 | Wait:1135 msÂ  Â
+[13:49:46] [Live] Stage:2 | Count:1 | Total:2 | Wait:1335 msÂ  Â
+[13:49:46] [Live] Stage:2 | Count:1 | Total:2 | Wait:1535 msÂ  Â
+[13:49:46] [Live] Stage:2 | Count:1 | Total:2 | Wait:1735 msÂ  Â
+**********************************
+      SYSTEM IS RUNNING
+**********************************
+[14:36:58] LED Self-Test Start......
+[14:36:59] LED Self-Test Done.
+[14:36:59] Waiting for signal pulses...
+[2J[HSYSTEM RESET OK.
+[14:37:04] [Live] Stage:1 | Count:1 | Total:1 | Wait:135 ms
+[14:37:05] [Live] Stage:1 | Count:1 | Total:1 | Wait:335 ms
+[14:37:05] [Live] Stage:1 | Count:1 | Total:1 | Wait:535 ms
+[14:37:05] [Live] Stage:1 | Count:1 | Total:1 | Wait:735 ms
+[14:37:05] [Live] Stage:1 | Count:1 | Total:1 | Wait:935 ms
+[2J[HSYSTEM RESET OK.
+**********************************
+      SYSTEM IS RUNNING
+**********************************
+[15:09:34] LED Self-Test Start......
+[15:09:35] LED Self-Test Done.
+[15:09:35] Waiting for signal pulses...
+[15:09:40] [Live] Stage:1 | Count:14 | Total:14 | Wait:5 ms
+[15:09:40] [Live] Stage:1 | Count:34 | Total:34 | Wait:5 ms
+[15:09:41] [Live] Stage:1 | Count:54 | Total:54 | Wait:5 ms
+[15:09:41] [Live] Stage:1 | Count:74 | Total:74 | Wait:5 ms
+[15:09:42] [Live] Stage:1 | Count:94 | Total:94 | Wait:5 ms
+[15:09:42] [Live] Stage:1 | Count:114 | Total:114 | Wait:5 ms
+[15:09:42] [Live] Stage:1 | Count:134 | Total:134 | Wait:5 ms
+[15:09:43] [Live] Stage:1 | Count:154 | Total:154 | Wait:5 ms
+[15:09:44] [Live] Stage:1 | Count:174 | Total:174 | Wait:5 ms
+[15:09:44] [Live] Stage:1 | Count:180 | Total:180 | Wait:145 ms
+[15:09:45] [Live] Stage:1 | Count:180 | Total:180 | Wait:345 ms
+[15:09:45] [Live] Stage:1 | Count:180 | Total:180 | Wait:545 ms
+[15:09:46] [Live] Stage:1 | Count:180 | Total:180 | Wait:745 ms
+[15:09:46] [Live] Stage:1 | Count:180 | Total:180 | Wait:945 ms
+[15:09:47] [Live] Stage:1 | Count:197 | Total:197 | Wait:5 ms
+[15:09:47] [Live] Stage:1 | Count:217 | Total:217 | Wait:5 ms
+[15:09:48] [Live] Stage:1 | Count:237 | Total:237 | Wait:5 ms
+[15:09:48] [Live] Stage:1 | Count:257 | Total:257 | Wait:5 ms
+[15:09:49] [Live] Stage:1 | Count:277 | Total:277 | Wait:5 ms
+[15:09:49] [Live] Stage:1 | Count:297 | Total:297 | Wait:5 ms
+[15:09:50] [Live] Stage:1 | Count:313 | Total:313 | Wait:45 ms
+[15:09:50] [Live] Stage:1 | Count:313 | Total:313 | Wait:245 ms
+[15:09:51] [Live] Stage:1 | Count:313 | Total:313 | Wait:445 ms
+[15:09:51] [Live] Stage:1 | Count:313 | Total:313 | Wait:645 ms
+[15:09:52] [Live] Stage:1 | Count:313 | Total:313 | Wait:845 ms
+[15:09:52] [Live] Stage:1 | Count:313 | Total:313 | Wait:1045 ms
+[15:09:53] [Live] Stage:1 | Count:313 | Total:313 | Wait:1245 ms
+[15:09:53] [Live] Stage:1 | Count:313 | Total:313 | Wait:1445 ms
+[15:09:54] [Live] Stage:1 | Count:313 | Total:313 | Wait:1645 ms
+[15:09:54] [Live] Stage:1 | Count:313 | Total:313 | Wait:1845 ms
+[15:09:55] [Live] Stage:1 | Count:313 | Total:313 | Wait:2045 ms
+[15:09:55] [Live] Stage:1 | Count:323 | Total:323 | Wait:55 ms
+[15:09:56] [Live] Stage:1 | Count:323 | Total:323 | Wait:255 ms
+[15:09:56] [Live] Stage:1 | Count:323 | Total:323 | Wait:455 ms
+[15:09:57] [Live] Stage:1 | Count:323 | Total:323 | Wait:655 ms
+[15:09:57] [Live] Stage:1 | Count:342 | Total:342 | Wait:5 ms
+[15:09:58] [Live] Stage:1 | Count:362 | Total:362 | Wait:5 ms
+[15:09:58] [Live] Stage:1 | Count:382 | Total:382 | Wait:5 ms
+[15:09:59] [Live] Stage:1 | Count:402 | Total:402 | Wait:5 ms
+[15:09:59] [Live] Stage:1 | Count:422 | Total:422 | Wait:5 ms
+[15:10:00] [Live] Stage:1 | Count:442 | Total:442 | Wait:5 ms
+[15:10:01] [Live] Stage:1 | Count:462 | Total:462 | Wait:5 ms
+[15:10:01] [Live] Stage:1 | Count:482 | Total:482 | Wait:5 ms
+[15:10:01] [Live] Stage:1 | Count:502 | Total:502 | Wait:5 ms
+[15:10:01] [Live] Stage:1 | Count:522 | Total:522 | Wait:5 ms
+[15:10:02] [Live] Stage:1 | Count:542 | Total:542 | Wait:5 ms
+[15:10:02] [Live] Stage:1 | Count:562 | Total:562 | Wait:5 ms
+[15:10:03] [Live] Stage:1 | Count:582 | Total:582 | Wait:5 ms
+[15:10:03] [Live] Stage:1 | Count:602 | Total:602 | Wait:5 ms
+[15:10:04] [Live] Stage:1 | Count:622 | Total:622 | Wait:5 ms
+[15:10:04] [Live] Stage:1 | Count:632 | Total:632 | Wait:105 ms
+[15:10:05] [Live] Stage:1 | Count:632 | Total:632 | Wait:305 ms
+[15:10:05] [Live] Stage:1 | Count:632 | Total:632 | Wait:505 ms
+[15:10:06] [Live] Stage:1 | Count:632 | Total:632 | Wait:705 ms
+[15:10:06] [Live] Stage:1 | Count:632 | Total:632 | Wait:905 ms
+[15:10:07] [Live] Stage:1 | Count:632 | Total:632 | Wait:1105 ms
+[15:10:07] [Live] Stage:1 | Count:632 | Total:632 | Wait:1305 ms
+[15:10:07] [Live] Stage:1 | Count:632 | Total:632 | Wait:1505 ms
+[15:10:08] [Live] Stage:1 | Count:632 | Total:632 | Wait:1705 ms
+[15:10:08] [Live] Stage:1 | Count:632 | Total:632 | Wait:1905 ms
+[15:10:09] [Live] Stage:1 | Count:632 | Total:632 | Wait:2105 ms
+[15:10:09] [Live] Stage:1 | Count:632 | Total:632 | Wait:2305 ms
+[15:10:09] [Live] Stage:1 | Count:632 | Total:632 | Wait:2505 ms
+[15:10:10] [Live] Stage:1 | Count:632 | Total:632 | Wait:2705 ms
+[15:10:10] [Live] Stage:1 | Count:632 | Total:632 | Wait:2905 ms
+[15:10:11] [Live] Stage:1 | Count:632 | Total:632 | Wait:3105 ms
+[15:10:11] [Live] Stage:1 | Count:632 | Total:632 | Wait:3305 ms
+[15:10:11] [Live] Stage:1 | Count:632 | Total:632 | Wait:3505 ms
+[15:10:12] [Live] Stage:1 | Count:632 | Total:632 | Wait:3705 ms
+[15:10:12] [Live] Stage:1 | Count:632 | Total:632 | Wait:3905 ms
+[15:10:16] [Live] Stage:1 | Count:632 | Total:632 | Wait:4105 ms
+[15:10:16] [Live] Stage:1 | Count:632 | Total:632 | Wait:4305 ms
+[15:10:16] [Live] Stage:1 | Count:632 | Total:632 | Wait:4505 ms
+[15:10:16] [Live] Stage:1 | Count:632 | Total:632 | Wait:4705 ms
+[15:10:16] [Live] Stage:1 | Count:632 | Total:632 | Wait:4905 ms
+[15:10:16] [Live] Stage:1 | Count:632 | Total:632 | Wait:5105 ms
+[15:10:16] [Live] Stage:1 | Count:632 | Total:632 | Wait:5305 ms
+[15:10:16] [Live] Stage:1 | Count:632 | Total:632 | Wait:5505 ms
+[15:10:16] [Live] Stage:1 | Count:632 | Total:632 | Wait:5705 ms
+[15:10:16] [Live] Stage:1 | Count:632 | Total:632 | Wait:5905 ms
+[15:10:17] [Live] Stage:1 | Count:632 | Total:632 | Wait:6105 ms
+[15:10:17] [Live] Stage:1 | Count:632 | Total:632 | Wait:6305 ms
+[15:10:18] [Live] Stage:1 | Count:632 | Total:632 | Wait:6505 ms
+[15:10:18] [Live] Stage:1 | Count:632 | Total:632 | Wait:6705 ms
+[15:10:18] [Live] Stage:1 | Count:632 | Total:632 | Wait:6905 ms
+[15:10:19] [Live] Stage:1 | Count:632 | Total:632 | Wait:7105 ms
+[15:10:19] [Live] Stage:1 | Count:632 | Total:632 | Wait:7305 ms
+[15:10:20] [Live] Stage:1 | Count:632 | Total:632 | Wait:7505 ms
+[15:10:20] [Live] Stage:1 | Count:632 | Total:632 | Wait:7705 ms
+[15:10:20] [Live] Stage:1 | Count:632 | Total:632 | Wait:7905 ms
+[15:10:21] [Live] Stage:1 | Count:632 | Total:632 | Wait:8105 ms
+[15:10:21] [Live] Stage:1 | Count:632 | Total:632 | Wait:8305 ms
+[15:10:22] [Live] Stage:1 | Count:632 | Total:632 | Wait:8505 ms
+[15:10:22] [Live] Stage:1 | Count:632 | Total:632 | Wait:8705 ms
+[15:10:22] [Live] Stage:1 | Count:632 | Total:632 | Wait:8905 ms
+[15:10:23] [Live] Stage:1 | Count:632 | Total:632 | Wait:9105 ms
+[15:10:23] [Live] Stage:1 | Count:632 | Total:632 | Wait:9305 ms
+[15:10:24] [Live] Stage:1 | Count:632 | Total:632 | Wait:9505 ms
+[15:10:24] [Live] Stage:1 | Count:632 | Total:632 | Wait:9705 ms
+[15:10:24] [Live] Stage:1 | Count:632 | Total:632 | Wait:9905 ms
+---------- [STAGE REPORT] ----------
+[15:10:25]  Stage ID      : 1
+[15:10:25]  Status        : EVENT COMPLETED
+[15:10:25]  Total Arcs    : 632
+[15:10:25]  Duration      : 10124 ms
+[15:10:25]  Min Interval  : 10 ms
+[15:10:25]  Max Interval  : 2144 ms
+------------------------------------
+[2J[HSYSTEM RESET OK.
+[15:52:20] [ERROR] 打开串口失败: Error { kind: NoDevice, description: "系统找不到指定的文件。" }
+**********************************
+      SYSTEM IS RUNNING
+**********************************
+[15:52:32] LED Self-Test Start......
+[15:52:34] LED Self-Test Done.
+[15:52:34] Waiting for signal pulses...
+[15:52:38] [Live] Stage:1 | Count:1 | Total:1 | Wait:135 ms
+[15:52:39] [Live] Stage:1 | Count:1 | Total:1 | Wait:335 ms
+[15:52:39] [Live] Stage:1 | Count:1 | Total:1 | Wait:535 ms
+[15:52:39] [Live] Stage:1 | Count:1 | Total:1 | Wait:735 ms
+[15:52:40] [Live] Stage:1 | Count:1 | Total:1 | Wait:935 ms
+[15:52:40] [Live] Stage:1 | Count:1 | Total:1 | Wait:1135 ms
+[15:52:40] [Live] Stage:1 | Count:1 | Total:1 | Wait:1335 ms
+[15:52:40] [Live] Stage:1 | Count:1 | Total:1 | Wait:1535 ms
+[15:52:41] [Live] Stage:1 | Count:1 | Total:1 | Wait:1735 ms
+[15:52:41] [Live] Stage:1 | Count:1 | Total:1 | Wait:1935 ms
+[15:52:41] [Live] Stage:1 | Count:1 | Total:1 | Wait:2135 ms
+[15:52:41] [Live] Stage:1 | Count:1 | Total:1 | Wait:2335 ms
+[15:52:42] [Live] Stage:1 | Count:1 | Total:1 | Wait:2535 ms
+[15:52:42] [Live] Stage:1 | Count:1 | Total:1 | Wait:2735 ms
+[15:52:42] [Live] Stage:1 | Count:1 | Total:1 | Wait:2935 ms
+[15:52:43] [Live] Stage:1 | Count:1 | Total:1 | Wait:3135 ms
+[15:52:43] [Live] Stage:1 | Count:1 | Total:1 | Wait:3335 ms
+[15:52:43] [Live] Stage:1 | Count:1 | Total:1 | Wait:3535 ms
+[15:52:43] [Live] Stage:1 | Count:1 | Total:1 | Wait:3735 ms
+[15:52:44] [Live] Stage:1 | Count:1 | Total:1 | Wait:3935 ms
+[15:52:44] [Live] Stage:1 | Count:1 | Total:1 | Wait:4135 ms
+[15:52:44] [Live] Stage:1 | Count:1 | Total:1 | Wait:4335 ms
+[15:52:45] [Live] Stage:1 | Count:1 | Total:1 | Wait:4535 ms
+[15:52:45] [Live] Stage:1 | Count:1 | Total:1 | Wait:4735 ms
+[15:52:45] [Live] Stage:1 | Count:1 | Total:1 | Wait:4935 ms
+[15:52:45] [Live] Stage:1 | Count:1 | Total:1 | Wait:5135 ms
+[15:52:46] [Live] Stage:1 | Count:1 | Total:1 | Wait:5335 ms
+[15:52:46] [Live] Stage:1 | Count:1 | Total:1 | Wait:5535 ms
+[15:52:46] [Live] Stage:1 | Count:1 | Total:1 | Wait:5735 ms
+[15:52:46] [Live] Stage:1 | Count:1 | Total:1 | Wait:5935 ms
+[15:52:47] [Live] Stage:1 | Count:1 | Total:1 | Wait:6135 ms
+[15:52:47] [Live] Stage:1 | Count:1 | Total:1 | Wait:6335 ms
+[15:52:47] [Live] Stage:1 | Count:1 | Total:1 | Wait:6535 ms
+[15:52:47] [Live] Stage:1 | Count:1 | Total:1 | Wait:6735 ms
+[15:52:48] [Live] Stage:1 | Count:1 | Total:1 | Wait:6935 ms
+[15:52:48] [Live] Stage:1 | Count:1 | Total:1 | Wait:7135 ms
+[15:52:48] [Live] Stage:1 | Count:1 | Total:1 | Wait:7335 ms
+[15:52:49] [Live] Stage:1 | Count:1 | Total:1 | Wait:7535 ms
+[15:52:49] [Live] Stage:1 | Count:1 | Total:1 | Wait:7735 ms
+[15:52:49] [Live] Stage:1 | Count:1 | Total:1 | Wait:7935 ms
+[15:52:50] [Live] Stage:1 | Count:1 | Total:1 | Wait:8135 ms
+[15:52:50] [Live] Stage:1 | Count:1 | Total:1 | Wait:8335 ms
+[15:52:50] [Live] Stage:1 | Count:1 | Total:1 | Wait:8535 ms
+[15:52:50] [Live] Stage:1 | Count:1 | Total:1 | Wait:8735 ms
+[15:52:51] [Live] Stage:1 | Count:1 | Total:1 | Wait:8935 ms
+[15:52:51] [Live] Stage:1 | Count:1 | Total:1 | Wait:9135 ms
+[15:52:51] [Live] Stage:1 | Count:1 | Total:1 | Wait:9335 ms
+[15:52:51] [Live] Stage:1 | Count:1 | Total:1 | Wait:9535 ms
+[15:52:52] [Live] Stage:1 | Count:1 | Total:1 | Wait:9735 ms
+[15:52:52] [Live] Stage:1 | Count:1 | Total:1 | Wait:9935 ms
+---------- [STAGE REPORT] ----------
+[15:52:52]  Stage ID      : 1
+[15:52:52]  Status        : EVENT COMPLETED
+[15:52:52]  Total Arcs    : 1
+[15:52:52]  Duration      : <10s (Single Pulse)
+[15:52:52]  Interval      : N/A   (Single Pulse)
+------------------------------------
+**********************************
+      SYSTEM IS RUNNING
+**********************************
+[16:14:33] LED Self-Test Start......
+[16:14:35] LED Self-Test Done.
+[16:14:35] Waiting for signal pulses...
+---------- [STAGE REPORT] ----------
+[16:15:17]  Stage ID      : 1
+[16:15:17]  Status        : EVENT COMPLETED
+[16:15:18]  Total Arcs    : 1137
+[16:15:18]  Duration      : 12401 ms
+[16:15:18]  Min Interval  : 10 ms
+[16:15:18]  Max Interval  : 653 ms
+------------------------------------
+[2J[HSYSTEM RESET OK.
