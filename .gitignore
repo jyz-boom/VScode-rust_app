@@ -1,0 +1,6 @@
+# 忽略 Rust 编译输出
+/target/
+
+#（顺手可以加一些IDE的）
+.vscode/
+.idea/
