@@ -1,0 +1,287 @@
+[10:58:16] [ERROR] 连接 TCP 127.0.0.1:5000 失败: Os { code: 10061, kind: ConnectionRefused, message: "由于目标计算机积极拒绝，无法连接。" }
+[11:10:45] [ERROR] 连接 TCP 127.0.0.1:5000 失败: Os { code: 10061, kind: ConnectionRefused, message: "由于目标计算机积极拒绝，无法连接。" }
+[11:10:53] [ERROR] 连接 TCP 127.0.0.1:5000 失败: Os { code: 10061, kind: ConnectionRefused, message: "由于目标计算机积极拒绝，无法连接。" }
+[11:16:48] [ERROR] 连接 TCP 127.0.0.1:5000 失败: Os { code: 10061, kind: ConnectionRefused, message: "由于目标计算机积极拒绝，无法连接。" }
+[11:16:52] [ERROR] 连接 TCP 127.0.0.1:5000 失败: Os { code: 10061, kind: ConnectionRefused, message: "由于目标计算机积极拒绝，无法连接。" }
+**********************************
+        SYSTEM IS RUNNING
+**********************************
+[13:31:55] LED Self-Test Start......
+[13:31:57] LED Self-Test Done.
+[13:31:57] Waiting for signal pulses...
+---------- [STAGE REPORT] ----------
+[13:33:21]  Stage ID      : 1
+[13:33:21]  Total Arcs    : 507
+[13:33:21]  Duration      : 18740 ms
+[13:33:21]  Min Interval  : 10 ms
+[13:33:21]  Max Interval  : 4535 ms
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[13:34:32]  Status        : Session Closed (Timeout)
+[13:34:32]  Active Time   : 18.740 s
+[13:34:32]  Total Stages  : 1
+[13:34:32]  Grand Total   : 507 pulses
+[13:34:32]  Avg Frequency : 27.05 Hz
+=====================================
+**********************************
+        SYSTEM IS RUNNING
+**********************************
+[13:50:23] LED Self-Test Start......
+[13:50:25] LED Self-Test Done.
+[13:50:25] Waiting for signal pulses...
+---------- [STAGE REPORT] ----------
+[13:50:57]  Stage ID      : 1
+[13:50:57]  Total Arcs    : 205
+[13:50:57]  Duration      : 5590 ms
+[13:50:57]  Min Interval  : 10 ms
+[13:50:57]  Max Interval  : 1736 ms
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[13:52:07]  Status        : Session Closed (Timeout)
+[13:52:08]  Active Time   : 5.590 s
+[13:52:08]  Total Stages  : 1
+[13:52:08]  Grand Total   : 205 pulses
+[13:52:08]  Avg Frequency : 36.67 Hz
+=====================================
+[2J[HSYSTEM RESET OK.
+**********************************
+        SYSTEM IS RUNNING
+**********************************
+[13:58:39] LED Self-Test Start......
+[13:58:41] LED Self-Test Done.
+[13:58:41] Waiting for signal pulses...
+[2J[HSYSTEM RESET OK.
+**********************************
+        SYSTEM IS RUNNING
+**********************************
+[14:01:58] LED Self-Test Start......
+[14:02:00] LED Self-Test Done.
+[14:02:00] Waiting for signal pulses...
+[2J[HSYSTEM RESET OK.
+**********************************
+        SYSTEM IS RUNNING
+**********************************
+[14:07:47] LED Self-Test Start......
+[14:07:49] LED Self-Test Done.
+[14:07:49] Waiting for signal pulses...
+---------- [STAGE REPORT] ----------
+[14:08:25]  Stage ID      : 1
+[14:08:25]  Total Arcs    : 345
+[14:08:25]  Duration      : 7198 ms
+[14:08:25]  Min Interval  : 10 ms
+[14:08:25]  Max Interval  : 1246 ms
+------------------------------------
+---------- [STAGE REPORT] ----------
+[14:09:15]  Stage ID      : 2
+[14:09:15]  Total Arcs    : 509
+[14:09:15]  Duration      : 8086 ms
+[14:09:15]  Min Interval  : 10 ms
+[14:09:15]  Max Interval  : 878 ms
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[14:10:26]  Status        : Session Closed (Timeout)
+[14:10:26]  Active Time   : 15.284 s
+[14:10:26]  Total Stages  : 2
+[14:10:26]  Grand Total   : 854 pulses
+[14:10:26]  Avg Frequency : 111.75 Hz
+=====================================
+**********************************
+        SYSTEM IS RUNNING
+**********************************
+[14:15:48] LED Self-Test Start......
+[14:15:50] LED Self-Test Done.
+[14:15:50] Waiting for signal pulses...
+---------- [STAGE REPORT] ----------
+[14:16:40]  Stage ID      : 1
+[14:16:40]  Total Arcs    : 333
+[14:16:40]  Duration      : 13356 ms
+[14:16:40]  Min Interval  : 10 ms
+[14:16:40]  Max Interval  : 3840 ms
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[14:17:52]  Status        : Session Closed (Timeout)
+[14:17:52]  Active Time   : 13.356 s
+[14:17:52]  Total Stages  : 1
+[14:17:52]  Grand Total   : 333 pulses
+[14:17:52]  Avg Frequency : 49.87 Hz
+=====================================
+[2J[HSYSTEM RESET OK.
+**********************************
+        SYSTEM IS RUNNING
+**********************************
+[14:22:52] LED Self-Test Start......
+[14:22:53] LED Self-Test Done.
+[14:22:53] Waiting for signal pulses...
+---------- [STAGE REPORT] ----------
+[14:23:19]  Stage ID      : 1
+[14:23:19]  Total Arcs    : 103
+[14:23:19]  Duration      : 4165 ms
+[14:23:19]  Min Interval  : 10 ms
+[14:23:19]  Max Interval  : 3115 ms
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[14:24:27]  Status        : Session Closed (Timeout)
+[14:24:27]  Active Time   : 4.165 s
+[14:24:27]  Total Stages  : 1
+[14:24:27]  Grand Total   : 103 pulses
+[14:24:27]  Avg Frequency : 24.73 Hz
+=====================================
+[2J[HSYSTEM RESET OK.
+**********************************
+        SYSTEM IS RUNNING
+**********************************
+[14:32:13] LED Self-Test Start......
+[14:32:15] LED Self-Test Done.
+[14:32:15] Waiting for signal pulses...
+---------- [STAGE REPORT] ----------
+[14:32:52]  Stage ID      : 1
+[14:32:52]  Total Arcs    : 178
+[14:32:52]  Duration      : 10777 ms
+[14:32:52]  Min Interval  : 10 ms
+[14:32:52]  Max Interval  : 5985 ms
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[14:34:01]  Status        : Session Closed (Timeout)
+[14:34:01]  Active Time   : 10.777 s
+[14:34:01]  Total Stages  : 1
+[14:34:01]  Grand Total   : 178 pulses
+[14:34:01]  Avg Frequency : 16.52 Hz
+=====================================
+---------- [STAGE REPORT] ----------
+[14:34:57]  Stage ID      : 1
+[14:34:57]  Total Arcs    : 561
+[14:34:57]  Duration      : 11195 ms
+[14:34:57]  Min Interval  : 10 ms
+[14:34:57]  Max Interval  : 2144 ms
+------------------------------------
+---------- [STAGE REPORT] ----------
+[14:35:29]  Stage ID      : 2
+[14:35:29]  Total Arcs    : 94
+[14:35:29]  Duration      : 1775 ms
+[14:35:29]  Min Interval  : 10 ms
+[14:35:29]  Max Interval  : 837 ms
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[14:36:41]  Status        : Session Closed (Timeout)
+[14:36:41]  Active Time   : 12.970 s
+[14:36:41]  Total Stages  : 2
+[14:36:41]  Grand Total   : 655 pulses
+[14:36:41]  Avg Frequency : 101.00 Hz
+=====================================
+---------- [STAGE REPORT] ----------
+[14:39:17]  Stage ID      : 1
+[14:39:17]  Total Arcs    : 10
+[14:39:17]  Duration      : 100 ms
+[14:39:17]  Min Interval  : 10 ms
+[14:39:17]  Max Interval  : 10 ms
+------------------------------------
+---------- [STAGE REPORT] ----------
+[14:39:39]  Stage ID      : 2
+[14:39:39]  Total Arcs    : 5
+[14:39:39]  Duration      : 50 ms
+[14:39:39]  Min Interval  : 10 ms
+[14:39:39]  Max Interval  : 10 ms
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[14:40:47]  Status        : Session Closed (Timeout)
+[14:40:47]  Active Time   : 0.150 s
+[14:40:47]  Total Stages  : 2
+[14:40:47]  Grand Total   : 15 pulses
+[14:40:47]  Avg Frequency : 100.00 Hz
+=====================================
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+**********************************
+        SYSTEM IS RUNNING
+**********************************
+[14:49:10] LED Self-Test Start......
+[14:49:12] LED Self-Test Done.
+[14:49:12] Waiting for signal pulses...
+---------- [STAGE REPORT] ----------
+[14:49:48]  Stage ID      : 1
+[14:49:48]  Total Arcs    : 283
+[14:49:48]  Duration      : 4745 ms
+[14:49:48]  Min Interval  : 10 ms
+[14:49:48]  Max Interval  : 1041 ms
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[14:50:57]  Status        : Session Closed (Timeout)
+[14:50:57]  Active Time   : 4.745 s
+[14:50:57]  Total Stages  : 1
+[14:50:57]  Grand Total   : 283 pulses
+[14:50:57]  Avg Frequency : 119.28 Hz
+=====================================
+===== SYSTEM RESET =====
+[2J[HSYSTEM RESET OK.
+===== SYSTEM RESET =====
+[2J[HSYSTEM RESET OK.
+===== SYSTEM RESET =====
+===== SYSTEM RESET =====
+===== SYSTEM RESET =====
+**********************************
+        SYSTEM IS RUNNING
+**********************************
+[15:11:43] LED Self-Test Start......
+[15:11:45] LED Self-Test Done.
+[15:11:45] Waiting for signal pulses...
+---------- [STAGE REPORT] ----------
+[15:12:13]  Stage ID      : 1
+[15:12:13]  Total Arcs    : 276
+[15:12:13]  Duration      : 3282 ms
+[15:12:13]  Min Interval  : 10 ms
+[15:12:13]  Max Interval  : 296 ms
+------------------------------------
+---------- [STAGE REPORT] ----------
+[15:12:40]  Stage ID      : 2
+[15:12:40]  Total Arcs    : 101
+[15:12:40]  Duration      : 2175 ms
+[15:12:40]  Min Interval  : 10 ms
+[15:12:40]  Max Interval  : 1164 ms
+------------------------------------
+========== [TOTAL SUMMARY] ==========
+[15:13:50]  Status        : Session Closed (Timeout)
+[15:13:50]  Active Time   : 5.457 s
+[15:13:50]  Total Stages  : 2
+[15:13:50]  Grand Total   : 377 pulses
+[15:13:50]  Avg Frequency : 69.09 Hz
+=====================================
+===== SYSTEM RESET =====
+===== SYSTEM RESET =====
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+[2J[HSYSTEM RESET OK.
+===== SYSTEM RESET =====
+===== SYSTEM RESET =====
+[2J[HSYSTEM RESET OK.
+---------- [STAGE REPORT] ----------
+[15:14:52]  Stage ID      : 1
+[15:14:52]  Total Arcs    : 168
+[15:14:52]  Duration      : 1680 ms
+[15:14:52]  Min Interval  : 10 ms
+[15:14:52]  Max Interval  : 10 ms
+------------------------------------
+===== SYSTEM RESET =====
+===== SYSTEM RESET =====
+[2J[HSYSTEM RESET OK.
+===== SYSTEM RESET =====
+===== SYSTEM RESET =====
+[2J[HSYSTEM RESET OK.
+===== SYSTEM RESET =====
+===== SYSTEM RESET =====
+[2J[HSYSTEM RESET OK.
+===== SYSTEM RESET =====
+===== SYSTEM RESET =====
+[2J[HSYSTEM RESET OK.
+===== SYSTEM RESET =====
+===== SYSTEM RESET =====
+[2J[HSYSTEM RESET OK.

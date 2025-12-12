@@ -3,10 +3,12 @@
 // DHJC ARC MONITOR - Rust GUI
 //
 // 顶部：两行
-//   行1：LOGO + RUN
-//   行2：右对齐： [TOP] [Logs] [Rate] [Connect/Disconnect] [Send R] [Mode + 参数]
-// 中间：左侧 4 卡片，右侧 Total 曲线 + ARC 灯
-// 底部：Live 一行 + Event Log (不含 Live 行)
+//   行1：LOGO (左) | 📌TOP + Logs... (右，Logs 在最右)
+//   行2：左：Mode/Serial/TCP/Port/... + Connect/Reset
+//        右：RUN 小圆灯
+// 中间：左侧 SidePanel：DATA TEMPLATE + 四个卡片（可滚动）
+//       右侧 CentralPanel：Live + Total Timeline（右上角 Rate）+ 曲线
+// 底部：Event Log（不可拖动分隔线）
 
 mod dhjc_core;
 
@@ -193,7 +195,7 @@ impl LogWriter {
             None => return,
         };
 
-        // tiny_dhjc.cpp 的 noTs 逻辑
+        // 标题行 / 分隔线不加时间戳
         let mut no_ts = false;
         if content.is_empty() {
             no_ts = true;
@@ -353,6 +355,7 @@ fn spawn_tcp_thread(
 
 // ================= GUI 状态 =================
 
+#[derive(Clone, Copy, PartialEq, Eq)]
 enum ConnectionStatus {
     Disconnected,
     Connected,
@@ -380,7 +383,7 @@ struct DhjcApp {
     line_rx: Option<Receiver<String>>,
     cmd_tx: Option<Sender<String>>,
 
-    log_lines: Vec<String>,       // 不含 Live
+    log_lines: Vec<String>,        // 不含 Live
     max_log_lines: usize,
     last_live_line: Option<String>, // 单独显示 Live
 
@@ -391,13 +394,62 @@ struct DhjcApp {
     max_plot_points: usize,
 
     last_pulse_time: Option<Instant>,
+    last_stage_for_plot: i32,
     always_on_top: bool,
+    last_wait_ms: Option<f64>,
+    prev_wait_ms: Option<f64>,
+    log_filter: String,
 }
 
 impl DhjcApp {
+
+    fn full_reset(&mut self) {
+         // ✅ 保留日志内容，不清空 log_lines
+        // ✅ 写入分隔线作为提示
+        self.logger.write_line("===== SYSTEM RESET =====");
+        self.log_lines.push("===== SYSTEM RESET =====".to_string());
+
+        // ✅ 重置内部计数与绘图
+        self.core = CoreState::new();
+        self.plot_points.clear();
+
+        // ✅ 清除速率状态
+        self.last_wait_ms = None;
+        self.prev_wait_ms = None;
+        self.last_pulse_time = None;
+        self.last_stage_for_plot = -1;
+
+        // ✅ 重置时间基准
+        self.start_time = Instant::now();
+
+        // ✅ 清空仅 UI 层的状态
+        self.last_live_line = None;
+        self.last_error = None;
+
+        // ✅ 日志写分隔线（视觉提示）
+        self.logger.write_line("===== SYSTEM RESET =====");
+        self.log_lines.push("===== SYSTEM RESET =====".to_string());
+
+        //
+        self.prev_wait_ms = None;
+
+    }
+
+    fn parse_wait_ms_from_live(line: &str) -> Option<f64> {
+        // 在字符串中找 "Wait:"
+        let tag = "Wait:";
+        let idx = line.find(tag)?;
+        let rest = &line[idx + tag.len()..];
+
+        // 从 "xxxxx ms" 里抠出数字
+        let end = rest.find("ms")?;
+        let num_str = rest[..end].trim();
+        num_str.parse::<f64>().ok()
+    }
+
     fn new(cc: &eframe::CreationContext<'_>, cfg: AppConfig) -> Self {
         let ctx = &cc.egui_ctx;
-        ctx.set_visuals(egui::Visuals::dark());
+        ctx.set_visuals(egui::Visuals::light());
         ctx.set_pixels_per_point(1.4);
 
         let mut style = (*ctx.style()).clone();
@@ -421,6 +473,7 @@ impl DhjcApp {
             cfg: cfg.clone(),
             logger: LogWriter::new(&cfg.log_folder),
             core: CoreState::new(),
+            prev_wait_ms: None,
             status: ConnectionStatus::Disconnected,
             mode,
             serial_port_text: cfg.port_name.clone(),
@@ -437,7 +490,11 @@ impl DhjcApp {
             plot_points: Vec::new(),
             max_plot_points: 2000,
             last_pulse_time: None,
+            last_stage_for_plot: -1,
             always_on_top: false,
+            last_wait_ms: None,
+
+            log_filter: String::new(),
         }
     }
 
@@ -514,14 +571,25 @@ impl DhjcApp {
     }
 
     fn rate_hz(&self) -> f64 {
-        if self.core.active_time_s > 0.0 {
-            self.core.current_total as f64 / self.core.active_time_s
+        if let Some(wait_ms) = self.last_wait_ms {
+            if wait_ms.is_finite() && wait_ms > 0.0 {
+                let rate = 1000.0 / wait_ms;
+                // 限制到合理范围
+                if (1.0..=1000.0).contains(&rate) {
+                    rate
+                } else {
+                    0.0
+                }
+            } else {
+                0.0
+            }
         } else {
             0.0
         }
     }
 
     fn handle_incoming_line(&mut self, line: &str) {
+        // 处理错误行
         if line.starts_with("[ERROR]") {
             self.last_error = Some(line.to_string());
         }
@@ -529,9 +597,22 @@ impl DhjcApp {
         let is_live = line.contains("[Live]") || line.contains("[LIVE]");
 
         if is_live {
-            // Live 单独显示，不写日志文件、不进 Event Log
+            // ✅ Live 行：实时显示 + 更新频率
             self.last_live_line = Some(line.to_string());
+
+            if let Some(wait_ms) = Self::parse_wait_ms_from_live(line) {
+                // 第一次解析，先存，不立刻显示
+                if self.prev_wait_ms.is_none() {
+                    self.prev_wait_ms = Some(wait_ms);
+                    self.last_wait_ms = None;
+                } else {
+                    let avg = (self.prev_wait_ms.unwrap() + wait_ms) / 2.0;
+                    self.last_wait_ms = Some(avg);
+                    self.prev_wait_ms = Some(wait_ms);
+                }
+            }
         } else {
+            // ✅ 非 Live 行：推送到日志
             self.log_lines.push(line.to_string());
             if self.log_lines.len() > self.max_log_lines {
                 let overflow = self.log_lines.len() - self.max_log_lines;
@@ -540,25 +621,81 @@ impl DhjcApp {
             self.logger.write_line(line);
         }
 
+        // ✅ 更新总数与绘图逻辑
+        let prev_total = self.core.current_total;
         let change: Change = self.core.process_line(line);
+
+        if self.core.current_total > prev_total {
+            self.last_pulse_time = Some(Instant::now());
+        }
 
         if change.total_changed {
             let t = self.start_time.elapsed().as_secs_f64();
+
+            if self.core.current_total < prev_total {
+                return;
+            }
+
+            const GAP_THRESHOLD: f64 = 5.0;
+            let mut gap_too_long = false;
+
+            if let Some(last_time) = self.last_pulse_time {
+                let gap = last_time.elapsed().as_secs_f64();
+                if gap > GAP_THRESHOLD {
+                    gap_too_long = true;
+                }
+            }
+
+            if gap_too_long {
+                self.plot_points.push([t, f64::NAN]);
+            }
+
             self.plot_points.push([t, self.core.current_total as f64]);
+
             if self.plot_points.len() > self.max_plot_points {
                 let overflow = self.plot_points.len() - self.max_plot_points;
                 self.plot_points.drain(0..overflow);
             }
+
             self.last_pulse_time = Some(Instant::now());
         }
     }
 
-    fn ui_stats_panel(&self, ui: &mut egui::Ui) {
-        ui.label(egui::RichText::new("监控概览").strong());
-        ui.add_space(8.0);
 
+    // 顶部 RUN 小灯
+    fn draw_run_led(&self, ui: &mut egui::Ui, on: bool) {
+        let size = 15.0;
+        let color_on = Color32::from_rgb(50, 220, 120);
+        let color_off = Color32::from_gray(70);
+        let color = if on { color_on } else { color_off };
+
+        let (rect, _) =
+            ui.allocate_exact_size(egui::vec2(size, size), egui::Sense::hover());
+        ui.painter()
+            .circle_filled(rect.center(), size / 2.0, color);
+    }
+
+    // 左侧卡片区域
+        fn ui_stats_panel(&self, ui: &mut egui::Ui) {
+        // 左侧区域大致宽度
+        ui.set_width(220.0);
+
+        // 顶部 DATA TEMPLATE：在左侧区域内水平居中 + 加粗
+        ui.add_space(4.0);
+        ui.columns(3, |cols| {
+            cols[1].label(
+                egui::RichText::new("DATA TEMPLATE")
+                    .size(13.0)
+                    .strong(),
+            );
+        });
+        ui.add_space(2.0);
+        ui.add(egui::Separator::default());
+        ui.add_space(4.0);
+
+        // 下面四张卡片保持不变
         self.stat_card(ui, "Stage", self.core.stage.to_string(), "");
-        ui.add_space(8.0);
+        ui.add_space(6.0);
 
         self.stat_card(
             ui,
@@ -566,7 +703,7 @@ impl DhjcApp {
             self.core.current_total.to_string(),
             "pulses",
         );
-        ui.add_space(8.0);
+        ui.add_space(6.0);
 
         self.stat_card(
             ui,
@@ -574,158 +711,210 @@ impl DhjcApp {
             format!("{:.3}", self.core.active_time_s),
             "s",
         );
-        ui.add_space(8.0);
+        ui.add_space(6.0);
 
         let ts = self.core.last_timestamp.as_deref().unwrap_or("N/A");
         self.stat_card(ui, "Last Update", ts.to_string(), "");
     }
 
+
+
+
+
+
     fn stat_card(&self, ui: &mut egui::Ui, title: &str, value: String, unit: &str) {
-        let bg = Color32::from_rgb(30, 34, 60);
-        let accent = Color32::from_rgb(120, 200, 255);
+        let bg = Color32::from_rgb(235, 239, 245);
+        let title_color = Color32::from_rgb(40, 40, 60);
+        let value_color = Color32::from_rgb(10, 10, 30);
+        let unit_color = Color32::from_rgb(90, 90, 120);
 
-        const CARD_W: f32 = 260.0;
-        const CARD_H: f32 = 110.0;
+        // 不用 Margin::symmetric，直接手写结构体，避免编译器提示 arguments incorrect
+        let margin = egui::Margin {
+            left: 8,
+            right: 8,
+            top: 4,     // 上边距很小
+            bottom: 4,
+        };
 
-        // 真·固定尺寸：先分配矩形，再在里面画 Frame
-        let (rect, _) =
-            ui.allocate_exact_size(egui::vec2(CARD_W, CARD_H), egui::Sense::hover());
+        egui::Frame::none()
+            .fill(bg)
+            .rounding(egui::Rounding::same(10))
+            .inner_margin(margin)
+            .show(ui, |ui| {
+                // 卡片本身的“有效宽度”，再瘦一点
+                ui.set_width(200.0);
 
-        ui.allocate_ui_at_rect(rect, |ui| {
-            ui.with_layout(Layout::top_down(Align::Min), |ui| {
-                egui::Frame::none()
-                    .fill(bg)
-                    .rounding(egui::Rounding::same(10))
-                    .inner_margin(egui::Margin::same(10))
-                    .show(ui, |ui| {
+                ui.vertical_centered(|ui| {
+                    ui.label(
+                        egui::RichText::new(title)
+                            .size(16.0)
+                            .color(title_color)
+                            .strong(),
+                    );
+                    ui.add_space(2.0);
+                    ui.label(
+                        egui::RichText::new(value.clone())
+                            .size(26.0)
+                            .color(value_color)
+                            .strong(),
+                    );
+                    if !unit.is_empty() {
+                        ui.add_space(1.0);
                         ui.label(
-                            egui::RichText::new(title)
-                                .size(20.0)
-                                .color(accent),
+                            egui::RichText::new(unit)
+                                .size(14.0)
+                                .color(unit_color),
                         );
-                        ui.add_space(6.0);
-                        ui.horizontal(|ui| {
-                            ui.label(
-                                egui::RichText::new(value)
-                                    .size(36.0)
-                                    .strong(),
-                            );
-                            if !unit.is_empty() {
-                                ui.label(
-                                    egui::RichText::new(unit)
-                                        .size(20.0)
-                                        .weak(),
-                                );
-                            }
-                        });
-                    });
+                    }
+                });
             });
-        });
     }
 
-    fn draw_led(&self, ui: &mut egui::Ui, label: &str, on: bool, color_on: Color32) {
-        let color_off = Color32::from_gray(70);
-        let color = if on { color_on } else { color_off };
-
-        ui.vertical(|ui| {
-            let (rect, _) =
-                ui.allocate_exact_size(egui::vec2(16.0, 16.0), egui::Sense::hover());
-            ui.painter()
-                .rect_filled(rect, 8.0, color);
-            ui.add_space(2.0);
-            ui.label(egui::RichText::new(label).size(10.0));
-        });
-    }
 }
+
 
 impl eframe::App for DhjcApp {
     fn update(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
-        // 收后台数据
-        if self.line_rx.is_some() {
-            // take the receiver out so we don't hold an immutable borrow of self
-            let mut rx = self.line_rx.take().unwrap();
-            let mut disconnected = false;
+        // 1. 先收后台数据
+        // 临时取出
+        let mut temp_rx = None;
+        if let Some(rx) = self.line_rx.take() {
+            temp_rx = Some(rx);
+        }
+
+        if let Some(rx) = &mut temp_rx {
             loop {
                 match rx.try_recv() {
-                    Ok(line) => self.handle_incoming_line(&line),
+                    Ok(line) => {
+                        self.handle_incoming_line(&line); // 可安全使用 &mut self
+                    }
                     Err(TryRecvError::Empty) => break,
                     Err(TryRecvError::Disconnected) => {
                         self.status = ConnectionStatus::Disconnected;
                         self.cmd_tx = None;
-                        disconnected = true;
                         break;
                     }
                 }
             }
-            // put the receiver back if still connected
-            if !disconnected {
-                self.line_rx = Some(rx);
-            } else {
-                self.line_rx = None;
-            }
         }
 
+        // 放回去
+        if self.status == ConnectionStatus::Connected {
+        self.line_rx = temp_rx;
+        }
         ctx.request_repaint_after(Duration::from_millis(50));
 
-        // 顶部两行
+        // 2. 顶部两行
         egui::TopBottomPanel::top("top_bar").show(ctx, |ui| {
-            // 行1：LOGO + RUN
+            // 行1：LOGO + TOP + Logs
             ui.horizontal(|ui| {
-                ui.heading("DHJC ARC MONITOR");
-                ui.add_space(12.0);
+                ui.label(
+                    egui::RichText::new("DHJC ARC MONITOR")
+                        .size(26.0)
+                        .strong(),
+                );
 
-                let blink_on = matches!(self.status, ConnectionStatus::Connected)
-                    && (self.start_time.elapsed().as_millis() / 500) % 2 == 0;
-                self.draw_led(ui, "RUN", blink_on, Color32::from_rgb(50, 220, 120));
+                ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
+                    if ui.button("Logs...").clicked() {
+                        self.open_logs_folder();
+                    }
+
+                    ui.add_space(6.0);
+
+                    let top_fill = if self.always_on_top {
+                        Color32::from_rgb(255, 210, 80)
+                    } else {
+                        Color32::from_gray(90)
+                    };
+                    let top_label = egui::RichText::new("📌 TOP")
+                        .strong()
+                        .color(Color32::BLACK);
+                    let top_btn = egui::Button::new(top_label).fill(top_fill);
+                    if ui.add(top_btn).clicked() {
+                        self.always_on_top = !self.always_on_top;
+                        let level = if self.always_on_top {
+                            WindowLevel::AlwaysOnTop
+                        } else {
+                            WindowLevel::Normal
+                        };
+                        ctx.send_viewport_cmd(ViewportCommand::WindowLevel(level));
+                    }
+                });
             });
 
             ui.add_space(6.0);
 
-            // 行2：右对齐
-            ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
-                // TOP 按钮
-                let top_fill = if self.always_on_top {
-                    Color32::from_rgb(255, 210, 80)
-                } else {
-                    Color32::from_gray(90)
-                };
-                let top_text = if self.always_on_top { "TOP" } else { "TOP" };
-                let top_btn = egui::Button::new(
-                    egui::RichText::new(top_text)
-                        .strong()
-                        .color(Color32::BLACK),
-                )
-                .fill(top_fill);
-                if ui.add(top_btn).clicked() {
-                    self.always_on_top = !self.always_on_top;
-                    let level = if self.always_on_top {
-                        WindowLevel::AlwaysOnTop
-                    } else {
-                        WindowLevel::Normal
-                    };
-                    ctx.send_viewport_cmd(ViewportCommand::WindowLevel(level));
-                }
+            // 行2：左参数 + Connect/Reset，右 RUN 灯
+            let blink_on = matches!(self.status, ConnectionStatus::Connected)
+                && (self.start_time.elapsed().as_millis() / 500) % 2 == 0;
 
-                ui.add_space(6.0);
-                if ui.button("Logs...").clicked() {
-                    self.open_logs_folder();
-                }
+            ui.columns(2, |cols| {
+            let is_connected = matches!(self.status, ConnectionStatus::Connected);
 
-                ui.add_space(10.0);
-                ui.label(format!("Rate: {:.2} Hz", self.rate_hz()));
+            // 左列：配置 + Connect/Reset
+            cols[0].horizontal(|ui| {
+                // 这一块配置在连接后变灰，不可编辑
+                ui.add_enabled_ui(!is_connected, |ui| {
+                    // Mode: 加粗
+                    ui.label(egui::RichText::new("Mode:").strong());
+                    egui::ComboBox::from_id_source("mode_combo")
+                        .selected_text(match self.mode {
+                            ConnectionMode::Serial => "Serial",
+                            ConnectionMode::Tcp => "TCP",
+                        })
+                        .show_ui(ui, |ui| {
+                            ui.selectable_value(&mut self.mode, ConnectionMode::Serial, "Serial");
+                            ui.selectable_value(&mut self.mode, ConnectionMode::Tcp, "TCP");
+                        });
 
-                ui.add_space(10.0);
+                    ui.add_space(8.0);
 
-                // Connect / Disconnect 一个按钮搞定
+                    match self.mode {
+                        ConnectionMode::Serial => {
+                            // 串口：Port / Baud
+                            ui.label(egui::RichText::new("Port:").strong());
+                            ui.add(
+                                egui::TextEdit::singleline(&mut self.serial_port_text)
+                                    .desired_width(80.0)
+                                    .horizontal_align(egui::Align::Center),
+                            );
+
+                            ui.add_space(8.0);
+
+                            ui.label(egui::RichText::new("Baud:").strong());
+                            ui.add(
+                                egui::TextEdit::singleline(&mut self.serial_baud_text)
+                                    .desired_width(80.0)
+                                    .horizontal_align(egui::Align::Center),
+                            );
+                        }
+                        ConnectionMode::Tcp => {
+                            // TCP：Host / Port
+                            ui.label(egui::RichText::new("Host:").strong());
+                            ui.add(
+                                egui::TextEdit::singleline(&mut self.tcp_host_text)
+                                    .desired_width(110.0)
+                                    .horizontal_align(egui::Align::Center),
+                            );
+
+                            ui.add_space(8.0);
+
+                            ui.label(egui::RichText::new("Port:").strong());
+                            ui.add(
+                                egui::TextEdit::singleline(&mut self.tcp_port_text)
+                                    .desired_width(80.0)
+                                    .horizontal_align(egui::Align::Center),
+                            );
+                        }
+                    }
+                });
+
+                ui.add_space(16.0);
+
+                // Connect / Disconnect 按钮始终可点
                 let (btn_text, btn_color) = match self.status {
-                    ConnectionStatus::Disconnected => (
-                        "Connect",
-                        Color32::from_rgb(80, 200, 120),
-                    ),
-                    ConnectionStatus::Connected => (
-                        "Disconnect",
-                        Color32::from_rgb(220, 80, 80),
-                    ),
+                    ConnectionStatus::Disconnected => ("Connect", Color32::from_rgb(80, 200, 120)),
+                    ConnectionStatus::Connected => ("Disconnect", Color32::from_rgb(220, 80, 80)),
                 };
                 let conn_btn = egui::Button::new(
                     egui::RichText::new(btn_text)
@@ -733,7 +922,6 @@ impl eframe::App for DhjcApp {
                         .color(Color32::BLACK),
                 )
                 .fill(btn_color);
-
                 if ui.add(conn_btn).clicked() {
                     match self.status {
                         ConnectionStatus::Disconnected => self.connect(),
@@ -741,74 +929,19 @@ impl eframe::App for DhjcApp {
                     }
                 }
 
-                ui.add_space(6.0);
-                if ui.button("Send R").clicked() {
+                ui.add_space(8.0);
+                if ui.button("Reset").clicked() {
                     self.send_reset();
+                    self.full_reset(); 
                 }
+            });
 
-                ui.add_space(12.0);
-
-                // Mode + 参数放最左（因为 right_to_left）
-                match self.mode {
-                    ConnectionMode::Serial => {
-                        ui.horizontal(|ui| {
-                            ui.label("Baud:");
-                            ui.add(
-                                egui::TextEdit::singleline(&mut self.serial_baud_text)
-                                    .desired_width(80.0),
-                            );
-                            ui.label("Port:");
-                            ui.add(
-                                egui::TextEdit::singleline(&mut self.serial_port_text)
-                                    .desired_width(80.0),
-                            );
-                            ui.label("Mode:");
-                            egui::ComboBox::from_id_source("mode_combo")
-                                .selected_text("Serial")
-                                .show_ui(ui, |ui| {
-                                    ui.selectable_value(
-                                        &mut self.mode,
-                                        ConnectionMode::Serial,
-                                        "Serial",
-                                    );
-                                    ui.selectable_value(
-                                        &mut self.mode,
-                                        ConnectionMode::Tcp,
-                                        "TCP",
-                                    );
-                                });
-                        });
-                    }
-                    ConnectionMode::Tcp => {
-                        ui.horizontal(|ui| {
-                            ui.label("Port:");
-                            ui.add(
-                                egui::TextEdit::singleline(&mut self.tcp_port_text)
-                                    .desired_width(70.0),
-                            );
-                            ui.label("Host:");
-                            ui.add(
-                                egui::TextEdit::singleline(&mut self.tcp_host_text)
-                                    .desired_width(130.0),
-                            );
-                            ui.label("Mode:");
-                            egui::ComboBox::from_id_source("mode_combo")
-                                .selected_text("TCP")
-                                .show_ui(ui, |ui| {
-                                    ui.selectable_value(
-                                        &mut self.mode,
-                                        ConnectionMode::Serial,
-                                        "Serial",
-                                    );
-                                    ui.selectable_value(
-                                        &mut self.mode,
-                                        ConnectionMode::Tcp,
-                                        "TCP",
-                                    );
-                                });
-                        });
-                    }
-                }
+                // 右列：RUN 灯不动
+                cols[1].with_layout(Layout::right_to_left(Align::Center), |ui| {
+                    let blink_on = matches!(self.status, ConnectionStatus::Connected)
+                        && (self.start_time.elapsed().as_millis() / 500) % 2 == 0;
+                    self.draw_run_led(ui, blink_on);
+                });
             });
 
             if let Some(err) = &self.last_error {
@@ -817,80 +950,132 @@ impl eframe::App for DhjcApp {
             }
         });
 
-        // 中间：统计 + 曲线
-        egui::CentralPanel::default().show(ctx, |ui| {
+        // 3. 底部 Event Log（固定）
+        egui::TopBottomPanel::bottom("log_panel")
+        .resizable(false)
+        .default_height(200.0)
+        .min_height(140.0)
+        .show(ctx, |ui| {
+            ui.add_space(4.0);
             ui.horizontal(|ui| {
-                // 左：卡片列
-                ui.vertical(|ui| {
-                    ui.set_min_width(280.0);
-                    self.ui_stats_panel(ui);
-                });
+                ui.add_space(8.0);
+                ui.label(egui::RichText::new("Event Log").strong());
 
-                ui.separator();
-
-                // 右：曲线 + ARC 灯
-                ui.vertical(|ui| {
-                    ui.horizontal(|ui| {
-                        ui.label(egui::RichText::new("Total Timeline").strong());
-                        ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
-                            let arc_on = self
-                                .last_pulse_time
-                                .map(|t| t.elapsed() < Duration::from_millis(800))
-                                .unwrap_or(false);
-                            self.draw_led(
-                                ui,
-                                "ARC",
-                                arc_on,
-                                Color32::from_rgb(230, 80, 80),
-                            );
-                        });
-                    });
-
-                    ui.add_space(4.0);
-
-                    Plot::new("pulse_plot")
-                        .height(260.0)
-                        .legend(Legend::default())
-                        .show(ui, |plot_ui| {
-                            if !self.plot_points.is_empty() {
-                                let points: PlotPoints =
-                                    PlotPoints::from(self.plot_points.clone());
-                                let line = Line::new("Total", points)
-                                    .color(Color32::from_rgb(120, 200, 255))
-                                    .width(2.0);
-                                plot_ui.line(line);
-                            }
-                        });
-                });
+                ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
+                // ✅ 搜索框
+                let resp = ui.add(
+                    egui::TextEdit::singleline(&mut self.log_filter)
+                        .hint_text("🔍 Search logs...")
+                        .desired_width(200.0),
+                );
+                if resp.changed() {
+                    // 重新过滤立即生效
+                    ctx.request_repaint();
+                }
             });
         });
 
-        // 底部：Live + Event Log
-        egui::TopBottomPanel::bottom("log_panel")
-            .resizable(true)
-            .default_height(220.0)
-            .show(ctx, |ui| {
-                ui.label(egui::RichText::new("Live:").strong());
-                let live_text = self
-                    .last_live_line
-                    .as_deref()
-                    .unwrap_or("Waiting for signal pulses...");
-                ui.label(egui::RichText::new(live_text).monospace());
-                ui.add_space(4.0);
-                ui.separator();
-                ui.add_space(4.0);
+        ui.add_space(4.0);
 
-                ui.label(egui::RichText::new("Event Log").strong());
-                ui.add_space(4.0);
-
+        egui::Frame::none()
+            .fill(Color32::from_rgb(245, 247, 250))
+            .show(ui, |ui| {
                 egui::ScrollArea::vertical()
                     .stick_to_bottom(true)
                     .show(ui, |ui| {
+                        let full_width = ui.available_width();
+
+                        // ✅ 按过滤条件显示
                         for line in &self.log_lines {
-                            ui.label(egui::RichText::new(line).monospace());
+                            if self.log_filter.is_empty()
+                                || line
+                                    .to_lowercase()
+                                    .contains(&self.log_filter.to_lowercase())
+                            {
+                                // 自动染色：ERROR 红，WARN 橙，其他灰
+                                let color = if line.contains("ERROR") {
+                                    Color32::from_rgb(220, 60, 60)
+                                } else if line.contains("WARN") {
+                                    Color32::from_rgb(230, 180, 70)
+                                } else {
+                                    Color32::from_gray(30)
+                                };
+
+                                ui.add_sized(
+                                    [full_width, 18.0],
+                                    egui::Label::new(
+                                        egui::RichText::new(line)
+                                            .monospace()
+                                            .color(color),
+                                    ),
+                                );
+                            }
                         }
                     });
             });
+    });
+
+
+        // 4. 左侧 SidePanel：DATA TEMPLATE + 四个卡片（可以滚动）
+        egui::SidePanel::left("stats_panel")
+        .resizable(false)
+        .min_width(220.0)
+        .max_width(240.0)
+        .show(ctx, |ui| {
+            egui::ScrollArea::vertical()
+                .auto_shrink([false; 2])
+                .show(ui, |ui| {
+                    self.ui_stats_panel(ui);
+                });
+        });
+
+        // 5. 中间 CentralPanel：Live + Total Timeline + Rate + 曲线
+        egui::CentralPanel::default().show(ctx, |ui| {
+            ui.vertical(|ui| {
+                // Live 行
+                ui.horizontal(|ui| {
+                ui.label(egui::RichText::new("Message:").strong());
+
+                if let Some(live_text) = self.last_live_line.as_deref() {
+                    ui.label(egui::RichText::new(live_text).monospace());
+                }
+                // 如果还没收到数据，就只剩一个 "Live:"，后面是空
+            });
+
+
+                ui.add_space(6.0);
+
+                // 标题 + Rate
+                ui.horizontal(|ui| {
+                ui.label(egui::RichText::new("Total Timeline").strong());
+                ui.with_layout(Layout::right_to_left(Align::Center), |ui| {
+                    ui.label(
+                        egui::RichText::new(format!("Rate: {:.2} pulses/s", self.rate_hz()))
+                            .monospace(),
+                    );
+                });
+            });
+
+                ui.add_space(4.0);
+
+                Plot::new("pulse_plot")
+                    .height(260.0)
+                    .legend(Legend::default())
+                    .show(ui, |plot_ui| {
+                        if !self.plot_points.is_empty() {
+                            let points: PlotPoints = self
+                                .plot_points
+                                .iter()
+                                .copied()
+                                .collect();
+                            let line = Line::new("Total", points)
+                                .color(Color32::from_rgb(120, 180, 255))
+                                .width(2.0);
+                            plot_ui.line(line);
+                        }
+                    });
+            });
+        });
     }
 }
 
@@ -902,7 +1087,7 @@ fn main() -> eframe::Result<()> {
     let native_options = NativeOptions {
         viewport: egui::ViewportBuilder::default()
             .with_inner_size(egui::vec2(1200.0, 750.0))
-            .with_min_inner_size(egui::vec2(900.0, 600.0))
+            .with_min_inner_size(egui::vec2(800.0, 620.0))
             .with_title("DHJC ARC MONITOR - Rust GUI"),
         ..Default::default()
     };
